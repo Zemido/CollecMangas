@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .card {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+        }
+        .card-title {
+            color: #ffffff;
+        }
+        .card-text {
+            color: #cccccc;
+        }
+        .manga-card {
+            transition: transform 0.3s;
+            max-width: max-content;
+        }
+        .manga-card:hover {
+            transform: scale(1.05);
+        }
+        .manga-card img {
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row mb-4">
+            <div class="col-md-8">
+                <input type="text" id="searchInput" class="form-control" placeholder="Chercher un manga..." list="mangaTitles">
+                <datalist id="mangaTitles">
+                    <!-- Options will be populated by JS -->
+                </datalist>
+            </div>
+            <div class="col-md-4">
+                <button id="filterBtn" class="btn btn-primary w-100">Filtrer</button>
+            </div>
+        </div>
+
+        <div id="mangaCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Carousel items will be populated by JS -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mangaCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mangaCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
+        </div>
+
+        <div id="mangaGrid" class="row">
+            <!-- Manga cards will be populated by JS -->
+        </div>
+    </div>
+
+    <!-- Filter Modal -->
+    <div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="filterModalLabel">Filtrer les Mangas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="authorInput" class="form-label">Auteur</label>
+                        <input type="text" class="form-control" id="authorInput" list="authorDatalist">
+                        <datalist id="authorDatalist"></datalist>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Genres</label>
+                        <div id="genresContainer"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Thèmes</label>
+                        <div id="themesContainer"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editorInput" class="form-label">Éditeur</label>
+                        <input type="text" class="form-control" id="editorInput" list="editorDatalist">
+                        <datalist id="editorDatalist"></datalist>
+                    </div>
+                    <div class="mb-3">
+                        <label for="statusSelect" class="form-label">Statut</label>
+                        <select multiple class="form-select" id="statusSelect"></select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Logique</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="logicRadio" id="orRadio" value="or" checked>
+                            <label class="form-check-label" for="orRadio">
+                                OR ( | )
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="logicRadio" id="andRadio" value="and">
+                            <label class="form-check-label" for="andRadio">
+                                AND ( & )
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="resetBtn">Reset</button>
+                    <button type="button" class="btn btn-primary" id="applyFilterBtn">Filtrer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Manga Details Modal -->
+    <div class="modal fade" id="mangaModal" tabindex="-1" aria-labelledby="mangaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mangaModalLabel">Détails du Manga</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="mangaModalBody">
+                    <!-- Content will be populated by JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let mangas = [];
+        let currentMangas = [];
+        let uniqueAuthors = new Set();
+        let uniqueGenres = {};
+        let uniqueThemes = {};
+        let uniqueEditors = new Set();
+        let uniqueStatuses = new Set([""]);
+        let editors = {};
+        let collectionColors = ["bg-secondary","bg-success","bg-warning"];
+
+        async function loadMangas() {
+            try {
+                const response = await fetch('mangas.json');
+                const data = await response.json();
+                mangas = data.mangas;
+                if(new URLSearchParams(document.location.search).get("admin") !== null) {
+                    mangas = mangas.filter(m => m.visible);
+                }
+                currentMangas = [...mangas];
+                currentMangas.sort((a, b) => a.id.localeCompare(b.id));
+                extractUniques();
+                const editorsResponse = await fetch('editors.json');
+                editors = await editorsResponse.json();
+                populateDatalist();
+                populateModal();
+                populateCarousel();
+                populateGrid();
+            } catch (error) {
+                console.error('Error loading mangas:', error);
+            }
+        }
+
+        function extractUniques() {
+            mangas.forEach(manga => {
+                manga.author.forEach(a => uniqueAuthors.add(a.split(' (')[0]));
+                manga.genres.forEach(g => uniqueGenres[g] = (uniqueGenres[g] || 0) + 1);
+                manga.themes.forEach(t => uniqueThemes[t] = (uniqueThemes[t] || 0) + 1);
+                uniqueEditors.add(manga.editor);
+                uniqueStatuses.add(manga.status);
+            });
+        }
+
+        function populateDatalist() {
+            const datalist = document.getElementById('mangaTitles');
+            const sortedTitles = mangas.map(m => m.id).sort();
+            sortedTitles.forEach(title => {
+                const option = document.createElement('option');
+                option.value = title;
+                datalist.appendChild(option);
+            });
+        }
+
+        function populateModal() {
+            // Authors datalist
+            const authorDatalist = document.getElementById('authorDatalist');
+            const sortedAuthors = Array.from(uniqueAuthors).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+            sortedAuthors.forEach(author => {
+                const option = document.createElement('option');
+                option.value = author;
+                authorDatalist.appendChild(option);
+            });
+
+            // Genres checkboxes in columns
+            const genresContainer = document.getElementById('genresContainer');
+            genresContainer.className = 'row';
+            const sortedGenres = Object.keys(uniqueGenres).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+            const numCols = 3;
+            const itemsPerCol = Math.ceil(sortedGenres.length / numCols);
+            for (let col = 0; col < numCols; col++) {
+                const colDiv = document.createElement('div');
+                colDiv.className = 'col';
+                for (let i = col * itemsPerCol; i < Math.min((col + 1) * itemsPerCol, sortedGenres.length); i++) {
+                    const genre = sortedGenres[i];
+                    const div = document.createElement('div');
+                    div.className = 'form-check';
+                    div.innerHTML = `
+                        <input class="form-check-input" type="checkbox" value="${genre}" id="genre${genre.replace(/\s+/g, '')}">
+                        <label class="form-check-label" for="genre${genre.replace(/\s+/g, '')}">
+                            ${genre} (${uniqueGenres[genre]})
+                        </label>
+                    `;
+                    colDiv.appendChild(div);
+                }
+                genresContainer.appendChild(colDiv);
+            }
+
+            // Themes checkboxes in columns
+            const themesContainer = document.getElementById('themesContainer');
+            themesContainer.className = 'row';
+            const sortedThemes = Object.keys(uniqueThemes).sort();
+            const itemsPerColThemes = Math.ceil(sortedThemes.length / numCols);
+            for (let col = 0; col < numCols; col++) {
+                const colDiv = document.createElement('div');
+                colDiv.className = 'col';
+                for (let i = col * itemsPerColThemes; i < Math.min((col + 1) * itemsPerColThemes, sortedThemes.length); i++) {
+                    const theme = sortedThemes[i];
+                    const div = document.createElement('div');
+                    div.className = 'form-check';
+                    div.innerHTML = `
+                        <input class="form-check-input" type="checkbox" value="${theme}" id="theme${theme.replace(/\s+/g, '')}">
+                        <label class="form-check-label" for="theme${theme.replace(/\s+/g, '')}">
+                            ${theme} (${uniqueThemes[theme]})
+                        </label>
+                    `;
+                    colDiv.appendChild(div);
+                }
+                themesContainer.appendChild(colDiv);
+            }
+
+            // Editor datalist
+            const editorDatalist = document.getElementById('editorDatalist');
+            const sortedEditors = Object.keys(editors).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+            sortedEditors.forEach(editor => {
+                const option = document.createElement('option');
+                option.value = editor;
+                editorDatalist.appendChild(option);
+            });
+
+            // Status select
+            const statusSelect = document.getElementById('statusSelect');
+            const orderedStatuses = ["", "En cours", "Terminé", "Terminé en VO", "Abandonné"];
+            orderedStatuses.forEach(status => {
+                if (uniqueStatuses.has(status)) {
+                    const option = document.createElement('option');
+                    option.value = status;
+                    option.textContent = status;
+                    statusSelect.appendChild(option);
+                }
+            });
+        }
+
+        function populateCarousel() {
+            const carouselInner = document.querySelector('.carousel-inner');
+            carouselInner.innerHTML = '';
+            const shuffled = [...mangas].sort(() => Math.random() - 0.5);
+            shuffled.forEach((manga, index) => {
+                const item = document.createElement('div');
+                item.className = `carousel-item ${index === 0 ? 'active' : ''}`;
+                item.innerHTML = `
+                    <div class="d-flex justify-content-center">
+                        <div class="manga-card position-relative" style="height: 300px; cursor: pointer;" onclick="showMangaDetails(this)" data-manga-id="${manga.id}">
+                            <img src="${manga.thumbnail}" class="img-fluid" alt="${manga.title.main}">
+                            <div class="position-absolute bottom-0 start-0 w-100 text-white p-2" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                                <h5 class="mb-0">${manga.title.main}</h5>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                carouselInner.appendChild(item);
+            });
+        }
+
+        function populateGrid(titleFilter = '') {
+            const grid = document.getElementById('mangaGrid');
+            grid.innerHTML = '';
+            const filteredMangas = currentMangas.filter(manga =>
+                manga.title.main.toLowerCase().includes(titleFilter.toLowerCase())
+            );
+            filteredMangas.forEach(manga => {
+                const col = document.createElement('div');
+                col.className = 'col-12 col-sm-6 col-md-4 col-lg-3 mb-4';
+                col.innerHTML = `
+                    <div class="manga-card position-relative" style="height: 300px; cursor: pointer;" onclick="showMangaDetails(this)" data-manga-id="${manga.id}">
+                        <img src="${manga.thumbnail}" class="img-fluid" alt="${manga.title.main}">
+                        <div class="position-absolute bottom-0 start-0 w-100 text-white p-2" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                            <h5 class="mb-0">${manga.title.main}</h5>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(col);
+            });
+        }
+
+        document.getElementById('searchInput').addEventListener('input', () => {
+            const filter = document.getElementById('searchInput').value;
+            populateGrid(filter);
+        });
+
+        document.getElementById('filterBtn').addEventListener('click', () => {
+            const modal = new bootstrap.Modal(document.getElementById('filterModal'));
+            modal.show();
+        });
+
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            // Reset all inputs and checkboxes
+            document.getElementById('authorInput').value = '';
+            document.querySelectorAll('#genresContainer input').forEach(cb => cb.checked = false);
+            document.querySelectorAll('#themesContainer input').forEach(cb => cb.checked = false);
+            document.getElementById('editorInput').value = '';
+            document.getElementById('statusSelect').querySelectorAll('option').forEach(o => o.selected = false);
+            document.getElementById('orRadio').checked = true;
+            currentMangas = [...mangas];
+            currentMangas.sort((a, b) => a.id.localeCompare(b.id));
+            populateGrid();
+            // Close modal
+            const modal = bootstrap.Modal.getInstance(document.getElementById('filterModal'));
+            modal.hide();
+        });
+
+        document.getElementById('applyFilterBtn').addEventListener('click', () => {
+            const authorFilter = document.getElementById('authorInput').value.toLowerCase();
+            const selectedGenres = Array.from(document.querySelectorAll('#genresContainer input:checked')).map(cb => cb.value);
+            const selectedThemes = Array.from(document.querySelectorAll('#themesContainer input:checked')).map(cb => cb.value);
+            const editorFilter = document.getElementById('editorInput').value.toLowerCase();
+            const selectedStatuses = Array.from(document.getElementById('statusSelect').selectedOptions).map(o => o.value);
+            const isAnd = document.getElementById('andRadio').checked;
+
+            const filtered = mangas.filter(manga => {
+                // Author
+                if (authorFilter && !manga.author.some(a => a.split(' (')[0].toLowerCase().includes(authorFilter))) return false;
+                // Genres
+                if (selectedGenres.length > 0) {
+                    const hasGenres = selectedGenres.some(g => manga.genres.includes(g));
+                    if (isAnd && !selectedGenres.every(g => manga.genres.includes(g))) return false;
+                    if (!isAnd && !hasGenres) return false;
+                }
+                // Themes
+                if (selectedThemes.length > 0) {
+                    const hasThemes = selectedThemes.some(t => manga.themes.includes(t));
+                    if (isAnd && !selectedThemes.every(t => manga.themes.includes(t))) return false;
+                    if (!isAnd && !hasThemes) return false;
+                }
+                // Editor
+                if (editorFilter) {
+                    const matchedKey = Object.keys(editors).find(key => key.toLowerCase().includes(editorFilter));
+                    if (matchedKey) {
+                        if (!editors[matchedKey].includes(manga.editor)) return false;
+                    } else {
+                        if (!manga.editor.toLowerCase().includes(editorFilter)) return false;
+                    }
+                }
+                // Status
+                if (selectedStatuses.length > 0 && selectedStatuses[0] !== "") {
+                    const hasStatus = selectedStatuses.includes(manga.status);
+                    if (!hasStatus) return false;
+                }
+                return true;
+            });
+
+            currentMangas = filtered;
+            currentMangas.sort((a, b) => a.id.localeCompare(b.id));
+            populateGrid(document.getElementById('searchInput').value);
+            // Close modal
+            const modal = bootstrap.Modal.getInstance(document.getElementById('filterModal'));
+            modal.hide();
+        });
+
+        loadMangas();
+
+        function showMangaDetails(element) {
+            const flagIcon = flag => `<span class="flag-icon flag-icon-${flag}"></span>`;
+            const id = element.dataset.mangaId;
+            const manga = mangas.find(m => m.id === id);
+            if (!manga) return;
+            const modalBody = document.getElementById('mangaModalBody');
+            let content = '<div class="row">';
+            // Left side: thumbnail
+            content += `<div class="col-md-4"><img src="${manga.thumbnail}" class="img-fluid" alt="${manga.title.main}"><p></p>`;
+            content += `<p><strong>Éditeur:</strong> ${manga.editor}</p>`;
+            content += `<p><strong>Volumes VO:</strong> ${manga.volumesVO}</p>`;
+            content += `<p><strong>Volumes VF:</strong> ${manga.volumesVF}</p>`;
+            content += `<p><strong>Statut:</strong> ${manga.status}</p>`;
+            content += `<p><strong>Collection:</strong><div class="progress">`;
+            for(const tome of manga.tomes) {
+                content += `<div class="progress-bar ${collectionColors[tome]}" role="progressbar" style="width: ${100/manga.volumesVO}%"></div>`;
+            }
+            content += '</div></p>';
+            content += `<p><strong><a href="${manga.link}" target="_blank">Lien</a></strong></p>`;
+            content += '</div>';
+            // Right side: info
+            content += '<div class="col-md-8">';
+            // Banner if oneshot
+            if (manga.category === 'oneshot') {
+                content += '<div class="alert alert-info" role="alert">C\'est un One-Shot</div>';
+            }
+            // Titles
+            content += '<h4>Titres:</h4><ul>';
+            content += `<li>${flagIcon("fr")} ${manga.title.main}</li>`;
+            if(manga.title.english) {
+                content += `<li>${flagIcon("gb")} ${manga.title.english}</li>`;
+            }
+            if(manga.title.romaji || manga.title.kanji) {
+                content += `<li>${flagIcon("jp")} ${[manga.title.romaji,manga.title.kanji].filter(t=>t).join(' / ')}</li>`;
+            }
+            if(manga.title.other) {
+                content += `<li>Autre nom : ${manga.title.other}</li>`;
+            }
+            content += '</ul>';
+            // Other info
+            content += `<p><strong>Genres:</strong> ${manga.genres.map(g => `<button class="btn btn-link p-0" onclick="filterByGenre('${g}')">${g}</button>`).join(', ')}</p>`;
+            content += `<p><strong>Thèmes:</strong> ${manga.themes.map(t => `<button class="btn btn-link p-0" onclick="filterByTheme('${t}')">${t}</button>`).join(', ')}</p>`;
+            content += `<p><strong>Auteur:</strong> ${manga.author.join(', ')}</p>`;
+            content += `<p><strong>Synopsis:</strong><br/>${manga.synopsis}</p>`;
+            content += `<p><strong>Avis ☝🤓:</strong> ${manga.review}</p>`;
+            content += '</div></div>';
+            modalBody.innerHTML = content;
+            const modal = new bootstrap.Modal(document.getElementById('mangaModal'));
+            modal.show();
+        }
+
+        function closeMangaModal() {
+            const modal = bootstrap.Modal.getInstance(document.getElementById('mangaModal'));
+            if (modal) modal.hide();
+        }
+
+        function filterByGenre(genre) {
+            closeMangaModal();
+            // Reset all filters
+            document.getElementById('authorInput').value = '';
+            document.querySelectorAll('#genresContainer input').forEach(cb => cb.checked = false);
+            document.querySelectorAll('#themesContainer input').forEach(cb => cb.checked = false);
+            document.getElementById('editorInput').value = '';
+            document.getElementById('statusSelect').querySelectorAll('option').forEach(o => o.selected = false);
+            document.getElementById('orRadio').checked = true;
+            // Set the genre
+            const cb = document.getElementById(`genre${genre.replace(/\s+/g, '')}`);
+            if (cb) cb.checked = true;
+            // Apply filter
+            document.getElementById('applyFilterBtn').click();
+        }
+
+        function filterByTheme(theme) {
+            closeMangaModal();
+            // Reset all filters
+            document.getElementById('authorInput').value = '';
+            document.querySelectorAll('#genresContainer input').forEach(cb => cb.checked = false);
+            document.querySelectorAll('#themesContainer input').forEach(cb => cb.checked = false);
+            document.getElementById('editorInput').value = '';
+            document.getElementById('statusSelect').querySelectorAll('option').forEach(o => o.selected = false);
+            document.getElementById('orRadio').checked = true;
+            // Set the theme
+            const cb = document.getElementById(`theme${theme.replace(/\s+/g, '')}`);
+            if (cb) cb.checked = true;
+            // Apply filter
+            document.getElementById('applyFilterBtn').click();
+        }
+    </script>
+</body>
+</html>
