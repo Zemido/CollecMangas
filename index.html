@@ -404,11 +404,17 @@
             content += `<p><strong>Volumes VO:</strong> ${manga.volumesVO}</p>`;
             content += `<p><strong>Volumes VF:</strong> ${manga.volumesVF}</p>`;
             content += `<p><strong>Statut:</strong> ${manga.status}</p>`;
+            if(manga.nextRelease !== '') {
+                content += `<p><strong>Prochaine sortie:</strong> ${new Date(manga.nextRelease).toLocaleDateString()}</p>`;
+            }
             content += `<p><strong>Collection:</strong><div class="progress">`;
             for(const tome of manga.tomes) {
                 content += `<div class="progress-bar ${collectionColors[tome]}" role="progressbar" style="width: ${100/manga.volumesVO}%"></div>`;
             }
             content += '</div></p>';
+            if(manga.mediums.length > 0) {
+                content += `<p><strong>Autres médias:</strong> ${manga.mediums.join(', ')}</p>`;
+            }
             content += `<p><strong><a href="${manga.link}" target="_blank">Lien</a></strong></p>`;
             content += '</div>';
             // Right side: info
@@ -433,7 +439,7 @@
             // Other info
             content += `<p><strong>Genres:</strong> ${manga.genres.map(g => `<button class="btn btn-link p-0" onclick="filterByGenre('${g}')">${g}</button>`).join(', ')}</p>`;
             content += `<p><strong>Thèmes:</strong> ${manga.themes.map(t => `<button class="btn btn-link p-0" onclick="filterByTheme('${t}')">${t}</button>`).join(', ')}</p>`;
-            content += `<p><strong>Auteur:</strong> ${manga.author.join(', ')}</p>`;
+            content += `<p><strong>Auteur${manga.author.length>1?'s':''}:</strong> ${manga.author.join(', ')}</p>`;
             content += `<p><strong>Synopsis:</strong><br/>${manga.synopsis}</p>`;
             content += `<p><strong>Avis ☝🤓:</strong> ${manga.review}</p>`;
             content += '</div></div>';

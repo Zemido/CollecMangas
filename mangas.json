@@ -2099,6 +2099,30 @@
             "mediums": [],
             "tomes": [1,1,1],
             "nextRelease": ""
+        },
+        {
+            "category": "auto",
+            "link": "https://www.nautiljon.com/mangas/dédale.html",
+            "thumbnail": "img/dedale_5595.webp",
+            "visible": true,
+            "title": {
+                "main": "Dédale",
+                "romaji": "Hyakumanjou Labyrinth",
+                "kanji": "百万畳ラビリンス"
+            },
+            "id": "dedale",
+            "genres": ["Action","Comédie","Fantasy","Slice of Life","Surnaturel"],
+            "themes": ["Autre monde","Idols","Hololive"],
+            "author": ["Takamichi"],
+            "editor": "Doki-Doki",
+            "volumesVO": 2,
+            "volumesVF": 2,
+            "status": "Terminé",
+            "synopsis": "<b>Reika</b> et <b>Yôko</b>, deux étudiantes, errent dans un gigantesque bâtiment labyrinthique. Leur seul indice pour retrouver le monde extérieur : un message trouvé sur une table basse signé <b>Tagami</b>, célèbre créateur de jeux vidéos.",
+            "review": "",
+            "mediums": [],
+            "tomes": [1,1],
+            "nextRelease": ""
         }
     ]
 }
