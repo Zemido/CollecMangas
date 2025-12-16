@@ -45,8 +45,11 @@
                     <!-- Options will be populated by JS -->
                 </datalist>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-2">
                 <button id="filterBtn" class="btn btn-primary w-100">Filtrer</button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-secondary w-100" onclick="resetFilter()">Reset</button>
             </div>
         </div>
 
@@ -152,12 +155,19 @@
         let editors = {};
         let collectionColors = ["bg-secondary","bg-success","bg-warning"];
 
+        async function dParam(p) {
+            const hBuffer = await window.crypto.subtle.digest("SHA-256",new TextEncoder().encode(p));
+            return Array.from(new Uint8Array(hBuffer)).map(b=>b.toString(16).padStart(2,"0")).join("");
+        }
+
         async function loadMangas() {
             try {
                 const response = await fetch('mangas.json');
                 const data = await response.json();
                 mangas = data.mangas;
-                if(new URLSearchParams(document.location.search).get("admin") === null) {
+
+                const pHash = await dParam(Array.from(new URLSearchParams(document.location.search).entries())[0]??"");
+                if(pHash !== "da16976f3c6fe605679ab45bbe77180835fd17fd8538f7769a77e2e2fc8b0d29") {
                     mangas = mangas.filter(m => m.visible);
                 }
                 currentMangas = [...mangas];
@@ -325,7 +335,7 @@
             modal.show();
         });
 
-        document.getElementById('resetBtn').addEventListener('click', () => {
+        function resetFilter() {
             // Reset all inputs and checkboxes
             document.getElementById('authorInput').value = '';
             document.querySelectorAll('#genresContainer input').forEach(cb => cb.checked = false);
@@ -336,6 +346,10 @@
             currentMangas = [...mangas];
             currentMangas.sort((a, b) => a.id.localeCompare(b.id));
             populateGrid();
+        }
+
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            resetFilter();
             // Close modal
             const modal = bootstrap.Modal.getInstance(document.getElementById('filterModal'));
             modal.hide();
