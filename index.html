@@ -157,7 +157,7 @@
                 const response = await fetch('mangas.json');
                 const data = await response.json();
                 mangas = data.mangas;
-                if(new URLSearchParams(document.location.search).get("admin") !== null) {
+                if(new URLSearchParams(document.location.search).get("admin") === null) {
                     mangas = mangas.filter(m => m.visible);
                 }
                 currentMangas = [...mangas];
