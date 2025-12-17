@@ -157,6 +157,19 @@
         let uniqueStatuses = new Set([""]);
         let editors = {};
         let collectionColors = ["bg-secondary","bg-success","bg-warning"];
+        let categoryBanners = {
+            oneshot: ["info", "C'est un one-shot"],
+            anthology: ["info", "C'est une anthologie"],
+            extra: ["info", "C'est un hors-série"],
+            hiatus: ["danger", "La série est en hiatus"],
+            abandonned: ["danger", "La série est abandonnée"],
+            english: ["warning", `${flagIcon("gb")} La série est en anglais`],
+            japanese: ["warning", `${flagIcon("jp")} La série est en japonais`]
+        };
+
+        function flagIcon(flag){
+            return `<span class="flag-icon flag-icon-${flag}"></span>`;
+        }
 
         async function dParam(p) {
             const hBuffer = await window.crypto.subtle.digest("SHA-256",new TextEncoder().encode(p));
@@ -168,6 +181,7 @@
                 const response = await fetch('mangas.json');
                 const data = await response.json();
                 mangas = data.mangas;
+                editors = data.editors;
 
                 const pHash = await dParam(Array.from(new URLSearchParams(document.location.search).entries())[0]??"");
                 if(pHash !== "da16976f3c6fe605679ab45bbe77180835fd17fd8538f7769a77e2e2fc8b0d29") {
@@ -176,8 +190,6 @@
                 currentMangas = [...mangas];
                 currentMangas.sort((a, b) => a.id.localeCompare(b.id));
                 extractUniques();
-                const editorsResponse = await fetch('editors.json');
-                editors = await editorsResponse.json();
                 populateDatalist();
                 populateModal();
                 populateCarousel();
@@ -409,7 +421,6 @@
         loadMangas();
 
         function showMangaDetails(element) {
-            const flagIcon = flag => `<span class="flag-icon flag-icon-${flag}"></span>`;
             const id = element.dataset.mangaId;
             const manga = mangas.find(m => m.id === id);
             if (!manga) return;
@@ -436,9 +447,10 @@
             content += '</div>';
             // Right side: info
             content += '<div class="col-md-8">';
-            // Banner if oneshot
-            if (manga.category === 'oneshot') {
-                content += '<div class="alert alert-info" role="alert">C\'est un One-Shot</div>';
+            // Banner if specified category
+            if(categoryBanners[manga.category]) {
+                const [level,text] = categoryBanners[manga.category];
+                content += `<div class="alert alert-${level}" role="alert">${text}</div>`;
             }
             // Titles
             content += '<h4>Titres:</h4><ul>';

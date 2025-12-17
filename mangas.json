@@ -72,7 +72,7 @@
             "nextRelease": ""
         },
         {
-            "category": "oneshot",
+            "category": "extra",
             "link": "https://www.nautiljon.com/mangas/gloutons+-+dragons/volume-guide+officiel+-+the+adventurer-s+bible,947571.html",
             "thumbnail": "img/gloutons_dragons_guide_officiel_-_the_adventurer_s_bible947571.webp",
             "visible": true,
@@ -95,7 +95,7 @@
             "nextRelease": ""
         },
         {
-            "category": "oneshot",
+            "category": "anthology",
             "link": "https://www.nautiljon.com/mangas/lycoris+recoil+-+react.html",
             "thumbnail": "img/lycoris_recoil_-_react_23540.webp",
             "visible": true,
@@ -120,7 +120,7 @@
             "nextRelease": ""
         },
         {
-            "category": "auto",
+            "category": "anthology",
             "link": "https://www.nautiljon.com/mangas/lycoris+recoil+-+repeat.html",
             "thumbnail": "img/lycoris_recoil_-_repeat_23542.webp",
             "visible": true,
@@ -145,7 +145,7 @@
             "nextRelease": ""
         },
          {
-            "category": "auto",
+            "category": "anthology",
             "link": "https://www.nautiljon.com/mangas/lycoris+recoil+-+reload.html",
             "thumbnail": "img/lycoris_recoil_-_reload_23541.webp",
             "visible": true,
@@ -170,7 +170,7 @@
             "nextRelease": ""
         },
         {
-            "category": "auto",
+            "category": "abandonned",
             "link": "https://www.nautiljon.com/mangas/act-age.html",
             "thumbnail": "img/act-age_9025.webp",
             "visible": true,
@@ -506,7 +506,7 @@
             "nextRelease": ""
         },
         {
-            "category": "auto",
+            "category": "hiatus",
             "link": "https://www.nautiljon.com/mangas/derrière+le+ciel+gris.html",
             "thumbnail": "img/derriere_le_ciel_gris_11579.webp",
             "visible": true,
@@ -1165,7 +1165,7 @@
             "nextRelease": "2026-02-27"
         },
         {
-            "category": "manual",
+            "category": "japanese",
             "link": "https://myanimelist.net/manga/97146/Mission_Impossible",
             "thumbnail": "img/mission_impossible_230048.webp",
             "visible": true,
@@ -1284,7 +1284,7 @@
             "nextRelease": ""
         },
         {
-            "category": "auto",
+            "category": "english",
             "link": "https://www.nautiljon.com/mangas/zannen+onna+kanbu+black+general-san.html",
             "thumbnail": "img/zannen_onna_kanbu_black_general-san_7100.webp",
             "visible": true,
@@ -1503,7 +1503,7 @@
             "nextRelease": "2025-12-17"
         },
         {
-            "category": "auto",
+            "category": "english",
             "link": "https://www.nautiljon.com/mangas/see+you+tomorrow+at+the+foodcourt.html",
             "thumbnail": "img/food_court_de_mata_ashita_30766.webp",
             "visible": true,
@@ -1575,7 +1575,7 @@
             "nextRelease": "2026-02-18"
         },
         {
-            "category": "oneshot",
+            "category": "japanese",
             "link": "https://www.nautiljon.com/mangas/shiroi+majo.html",
             "thumbnail": "img/shiroi_majo_6591.webp",
             "visible": true,
@@ -1599,7 +1599,7 @@
             "nextRelease": ""
         },
         {
-            "category": "auto",
+            "category": "japanese",
             "link": "https://www.nautiljon.com/mangas/shiroi+majo+-+utsukushiki+sniper.html",
             "thumbnail": "img/shiroi_majo_-_utsukushiki_sniper_12077.webp",
             "visible": true,
@@ -1789,7 +1789,7 @@
             "nextRelease": ""
         },
         {
-            "category": "auto",
+            "category": "english",
             "link": "https://www.nautiljon.com/mangas/touhou+-+forbidden+scrollery.html",
             "thumbnail": "img/touhou_-_forbidden_scrollery_4975.webp",
             "visible": true,
@@ -1931,7 +1931,7 @@
             "nextRelease": ""
         },
         {
-            "category": "auto",
+            "category": "english",
             "link": "https://www.nautiljon.com/mangas/hôtel+voynich.html",
             "thumbnail": "img/hotel_voynich_6904.webp",
             "visible": true,
@@ -1955,7 +1955,7 @@
             "nextRelease": ""
         },
         {
-            "category": "auto",
+            "category": "english",
             "link": "https://www.nautiljon.com/mangas/je+ne+suis+pas+populaire+et+c-est+de+votre+faute+!.html",
             "thumbnail": "img/je_ne_suis_pas_populaire_et_c_est_de_votre_faute_4080.webp",
             "visible": true,
@@ -2077,7 +2077,7 @@
             "nextRelease": "2026-04-01"
         },
         {
-            "category": "manual",
+            "category": "japanese",
             "link": "https://myanimelist.net/manga/141234/Holoearth_Chronicles_Side_E_-_Yamato_Kasou_Kaiitan",
             "thumbnail": "img/holoearth_chronicles_side_e_-_yamato_phantasia_313634.webp",
             "visible": true,
@@ -2124,5 +2124,33 @@
             "tomes": [1,1],
             "nextRelease": ""
         }
-    ]
+    ],
+    "editors": {
+        "Akata": ["Akata"],
+        "Casterman": ["Casterman"],
+        "Crunchyroll": ["Kazé", "Crunchyroll"],
+        "Delcourt/Tonkam": ["Delcourt/Tonkam"],
+        "Doki-Doki": ["Doki-Doki"],
+        "Glénat": ["Glénat"],
+        "Kana": ["Kana"],
+        "Kazé": ["Kazé", "Crunchyroll"],
+        "Ki-oon": ["Ki-oon"],
+        "komikku": ["komikku"],
+        "Kurokawa": ["Kurokawa"],
+        "Mana Books": ["Mana Books"],
+        "Meian": ["Meian"],
+        "Nazca": ["Nazca"],
+        "nobi nobi!": ["nobi nobi!"],
+        "noeve grafx": ["noeve grafx"],
+        "Omaké Books": ["Omaké Books"],
+        "Ototo": ["Ototo"],
+        "Panini": ["Panini"],
+        "Pika": ["Pika"],
+        "Seven Seas": ["Seven Seas"],
+        "Shiba Éditions": ["Shiba Éditions"],
+        "Soleil": ["Soleil"],
+        "Square Enix": ["Square Enix"],
+        "Takeshobo": ["Takeshobo"],
+        "VEGA-Dupuis": ["VEGA-Dupuis"]
+    }
 }
