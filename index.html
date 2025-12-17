@@ -34,6 +34,9 @@
             height: 100%;
             object-fit: cover;
         }
+        .vertical-screen {
+            width: 50%;
+        }
     </style>
 </head>
 <body>
@@ -312,7 +315,7 @@
             );
             filteredMangas.forEach(manga => {
                 const col = document.createElement('div');
-                col.className = 'col-12 col-sm-6 col-md-4 col-lg-3 mb-4';
+                col.className = `col-12 col-sm-6 col-md-4 col-lg-3 mb-4${window.innerWidth<window.innerHeight ? " vertical-screen":""}`;
                 col.innerHTML = `
                     <div class="manga-card position-relative" style="height: 300px; cursor: pointer;" onclick="showMangaDetails(this)" data-manga-id="${manga.id}">
                         <img src="${manga.thumbnail}" class="img-fluid" alt="${manga.title.main}">
