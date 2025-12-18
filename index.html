@@ -156,27 +156,12 @@
         let uniqueEditors = new Set();
         let uniqueStatuses = new Set([""]);
         let editors = {};
-        let collectionColors = ["bg-secondary","bg-success","bg-warning"];
-        let categoryBanners = {
-            oneshot: ["info", "C'est un one-shot"],
-            anthology: ["info", "C'est une anthologie"],
-            extra: ["info", "C'est un hors-série"],
-            hiatus: ["danger", "La série est en hiatus"],
-            abandonned: ["danger", "La série est abandonnée"],
-            english: ["warning", `${flagIcon("gb")} La série est en anglais`],
-            japanese: ["warning", `${flagIcon("jp")} La série est en japonais`]
-        };
-
-        function flagIcon(flag){
-            return `<span class="flag-icon flag-icon-${flag}"></span>`;
-        }
-
-        async function dParam(p) {
-            const hBuffer = await window.crypto.subtle.digest("SHA-256",new TextEncoder().encode(p));
-            return Array.from(new Uint8Array(hBuffer)).map(b=>b.toString(16).padStart(2,"0")).join("");
-        }
-
+        
         async function loadMangas() {
+            async function dParam(p) {
+                const hBuffer = await window.crypto.subtle.digest("SHA-256",new TextEncoder().encode(p));
+                return Array.from(new Uint8Array(hBuffer)).map(b=>b.toString(16).padStart(2,"0")).join("");
+            }
             try {
                 const response = await fetch('mangas.json');
                 const data = await response.json();
@@ -421,6 +406,33 @@
         loadMangas();
 
         function showMangaDetails(element) {
+            function flagIcon(flag){
+                return `<span class="flag-icon flag-icon-${flag}"></span>`;
+            }
+            function unbreakSpaces(text) {
+                const replaces = [
+                    [' ;','&nbsp;;'],
+                    [' :','&nbsp;:'],
+                    [' !','&nbsp;!'],
+                    [' ?','&nbsp;?'],
+                    [' « ','&nbsp;«&nbsp;'],
+                    [' »','&nbsp;»']
+                ];
+                for(const [a,b] of replaces) {
+                    text = text.replaceAll(a,b);
+                }
+                return text;
+            }
+            let collectionColors = ["bg-secondary","bg-success","bg-warning"];
+                let categoryBanners = {
+                oneshot: ["info", "C'est un one-shot"],
+                anthology: ["info", "C'est une anthologie"],
+                extra: ["info", "C'est un hors-série"],
+                hiatus: ["danger", "La série est en hiatus"],
+                abandonned: ["danger", "La série est abandonnée"],
+                english: ["warning", `${flagIcon("gb")} La série est en anglais`],
+                japanese: ["warning", `${flagIcon("jp")} La série est en japonais`]
+            };
             const id = element.dataset.mangaId;
             const manga = mangas.find(m => m.id === id);
             if (!manga) return;
@@ -469,8 +481,8 @@
             content += `<p><strong>Genres:</strong> ${manga.genres.map(g => `<button class="btn btn-link p-0" onclick="filterByGenre('${g}')">${g}</button>`).join(', ')}</p>`;
             content += `<p><strong>Thèmes:</strong> ${manga.themes.map(t => `<button class="btn btn-link p-0" onclick="filterByTheme('${t}')">${t}</button>`).join(', ')}</p>`;
             content += `<p><strong>Auteur${manga.author.length>1?'s':''}:</strong> ${manga.author.join(', ')}</p>`;
-            content += `<p><strong>Synopsis:</strong><br/>${manga.synopsis}</p>`;
-            content += `<p><strong>Avis ☝🤓:</strong> ${manga.review}</p>`;
+            content += `<p><strong>Synopsis:</strong><br/>${unbreakSpaces(manga.synopsis)}</p><hr/>`;
+            content += `<p><strong>Avis ☝🤓:</strong> ${unbreakSpaces(manga.review)}</p>`;
             content += '</div></div>';
             modalBody.innerHTML = content;
             const modal = new bootstrap.Modal(document.getElementById('mangaModal'));
