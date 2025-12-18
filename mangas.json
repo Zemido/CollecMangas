@@ -3,7 +3,7 @@
         {
             "category": "oneshot",
             "link": "https://www.nautiljon.com/mangas/adieu+eri.html",
-            "thumbnail": "img/adieu_eri_21648.webp",
+            "thumbnail": "bg-adieu_eri_21648",
             "visible": true,
             "title": {
                 "main": "Adieu Eri",
@@ -28,7 +28,7 @@
         {
             "category": "oneshot",
             "link": "https://www.nautiljon.com/mangas/look+back.html",
-            "thumbnail": "img/look_back_19388.webp",
+            "thumbnail": "bg-look_back_19388",
             "visible": true,
             "title": {
                 "main": "Look Back",
@@ -51,7 +51,7 @@
         {
             "category": "oneshot",
             "link": "https://www.nautiljon.com/mangas/star+wars+-+visions.html",
-            "thumbnail": "img/star_wars_-_visions_24037.webp",
+            "thumbnail": "bg-star_wars_-_visions_24037",
             "visible": true,
             "title": {
                 "main": "Star Wars - Visions",
@@ -74,7 +74,7 @@
         {
             "category": "extra",
             "link": "https://www.nautiljon.com/mangas/gloutons+-+dragons/volume-guide+officiel+-+the+adventurer-s+bible,947571.html",
-            "thumbnail": "img/gloutons_dragons_guide_officiel_-_the_adventurer_s_bible947571.webp",
+            "thumbnail": "bg-gloutons_dragons_guide_officiel_-_the_adventurer_s_bible947571",
             "visible": true,
             "title": {
                 "main": "Gloutons & Dragons Guide officiel - The Adventurer's Bible",
@@ -97,7 +97,7 @@
         {
             "category": "anthology",
             "link": "https://www.nautiljon.com/mangas/lycoris+recoil+-+react.html",
-            "thumbnail": "img/lycoris_recoil_-_react_23540.webp",
+            "thumbnail": "bg-lycoris_recoil_-_react_23540",
             "visible": true,
             "title": {
                 "main": "Lycoris Recoil - React",
@@ -122,7 +122,7 @@
         {
             "category": "anthology",
             "link": "https://www.nautiljon.com/mangas/lycoris+recoil+-+repeat.html",
-            "thumbnail": "img/lycoris_recoil_-_repeat_23542.webp",
+            "thumbnail": "bg-lycoris_recoil_-_repeat_23542",
             "visible": true,
             "title": {
                 "main": "Lycoris Recoil - Repeat",
@@ -147,7 +147,7 @@
          {
             "category": "anthology",
             "link": "https://www.nautiljon.com/mangas/lycoris+recoil+-+reload.html",
-            "thumbnail": "img/lycoris_recoil_-_reload_23541.webp",
+            "thumbnail": "bg-lycoris_recoil_-_reload_23541",
             "visible": true,
             "title": {
                 "main": "Lycoris Recoil - Reload",
@@ -172,7 +172,7 @@
         {
             "category": "abandonned",
             "link": "https://www.nautiljon.com/mangas/act-age.html",
-            "thumbnail": "img/act-age_9025.webp",
+            "thumbnail": "bg-act-age_9025",
             "visible": true,
             "title": {
                 "main": "Act-age",
@@ -195,7 +195,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/arpeggio+of+blue+steel.html",
-            "thumbnail": "img/arpeggio_of_blue_steel_3872.webp",
+            "thumbnail": "bg-arpeggio_of_blue_steel_3872",
             "visible": true,
             "title": {
                 "main": "Arpeggio of Blue Steel",
@@ -219,7 +219,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/asobi+asobase.html",
-            "thumbnail": "img/asobi_asobase_6663.webp",
+            "thumbnail": "bg-asobi_asobase_6663",
             "visible": true,
             "title": {
                 "main": "Asobi Asobase",
@@ -242,7 +242,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/l-atelier+des+sorciers.html",
-            "thumbnail": "img/l_atelier_des_sorciers_6819.webp",
+            "thumbnail": "bg-l_atelier_des_sorciers_6819",
             "visible": true,
             "title": {
                 "main": "L'Atelier des Sorciers",
@@ -267,7 +267,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/badass+cop+-+dolphin.html",
-            "thumbnail": "img/badass_cop_dolphin_14978.webp",
+            "thumbnail": "bg-badass_cop_dolphin_14978",
             "visible": true,
             "title": {
                 "main": "Badass Cop & Dolphin",
@@ -292,7 +292,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/balade+au+crépuscule.html",
-            "thumbnail": "img/balade_au_crepuscule_19377.webp",
+            "thumbnail": "bg-balade_au_crepuscule_19377",
             "visible": true,
             "title": {
                 "main": "Balade au Crépuscule",
@@ -317,7 +317,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/bocchi+the+rock!.html",
-            "thumbnail": "img/bocchi_the_rock_13406.webp",
+            "thumbnail": "bg-bocchi_the_rock_13406",
             "visible": true,
             "title": {
                 "main": "Bocchi the Rock!",
@@ -340,7 +340,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/bofuri+-+je+suis+pas+venue+ici+pour+souffrir+alors+j-ai+tout+mis+en+défense.html",
-            "thumbnail": "img/bofuri_je_suis_pas_venue_ici_pour_souffrir_alors_j_ai_tout_mis_en_defense_11563.webp",
+            "thumbnail": "bg-bofuri_je_suis_pas_venue_ici_pour_souffrir_alors_j_ai_tout_mis_en_defense_11563",
             "visible": true,
             "title": {
                 "main": "Bofuri : Je suis pas venue ici pour souffrir alors j'ai tout mis en défense",
@@ -365,7 +365,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/call+of+the+night.html",
-            "thumbnail": "img/call_of_the_night_12040.webp",
+            "thumbnail": "bg-call_of_the_night_12040",
             "visible": true,
             "title": {
                 "main": "Call of the Night",
@@ -389,7 +389,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/city+hunter+rebirth.html",
-            "thumbnail": "img/city_hunter_rebirth_7591.webp",
+            "thumbnail": "bg-city_hunter_rebirth_7591",
             "visible": true,
             "title": {
                 "main": "City Hunter Rebirth",
@@ -413,7 +413,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/coffee+moon.html",
-            "thumbnail": "img/coffee_moon_15054.webp",
+            "thumbnail": "bg-coffee_moon_15054",
             "visible": true,
             "title": {
                 "main": "Coffee Moon",
@@ -436,7 +436,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/coma+héroïque+dans+un+autre+monde.html",
-            "thumbnail": "img/coma_heroique_dans_un_autre_monde_12059.webp",
+            "thumbnail": "bg-coma_heroique_dans_un_autre_monde_12059",
             "visible": true,
             "title": {
                 "main": "Coma héroïque dans un autre monde",
@@ -461,7 +461,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/dark+gathering.html",
-            "thumbnail": "img/dark_gathering_13134.webp",
+            "thumbnail": "bg-dark_gathering_13134",
             "visible": true,
             "title": {
                 "main": "Dark Gathering",
@@ -484,7 +484,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/days+with+my+stepsister.html",
-            "thumbnail": "img/days_with_my_stepsister_21675.webp",
+            "thumbnail": "bg-days_with_my_stepsister_21675",
             "visible": false,
             "title": {
                 "main": "Days with My Stepsister",
@@ -508,7 +508,7 @@
         {
             "category": "hiatus",
             "link": "https://www.nautiljon.com/mangas/derrière+le+ciel+gris.html",
-            "thumbnail": "img/derriere_le_ciel_gris_11579.webp",
+            "thumbnail": "bg-derriere_le_ciel_gris_11579",
             "visible": true,
             "title": {
                 "main": "Derrière le ciel gris",
@@ -532,7 +532,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/eizôken+!!+pas+touche+à+nos+animés+!.html",
-            "thumbnail": "img/eizoken_pas_touche_a_nos_animes_8032.webp",
+            "thumbnail": "bg-eizoken_pas_touche_a_nos_animes_8032",
             "visible": true,
             "title": {
                 "main": "Eizôken !! Pas touche à nos animés !",
@@ -557,7 +557,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/la+fanfare+au+clair+de+lune.html",
-            "thumbnail": "img/la_fanfare_au_clair_de_lune_15101.webp",
+            "thumbnail": "bg-la_fanfare_au_clair_de_lune_15101",
             "visible": true,
             "title": {
                 "main": "La Fanfare au clair de lune",
@@ -582,7 +582,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/les+fleurs+de+la+mer+Égée.html",
-            "thumbnail": "img/les_fleurs_de_la_mer_egee_11334.webp",
+            "thumbnail": "bg-les_fleurs_de_la_mer_egee_11334",
             "visible": true,
             "title": {
                 "main": "Les Fleurs de la mer Égée",
@@ -607,7 +607,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/flying+witch.html",
-            "thumbnail": "img/flying_witch_3799.webp",
+            "thumbnail": "bg-flying_witch_3799",
             "visible": true,
             "title": {
                 "main": "Flying Witch",
@@ -630,7 +630,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/frieren.html",
-            "thumbnail": "img/frieren_15713.webp",
+            "thumbnail": "bg-frieren_15713",
             "visible": true,
             "title": {
                 "main": "Frieren",
@@ -655,7 +655,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/girls-+last+tour.html",
-            "thumbnail": "img/girls_last_tour_6344.webp",
+            "thumbnail": "bg-girls_last_tour_6344",
             "visible": true,
             "title": {
                 "main": "Girls' Last Tour",
@@ -680,7 +680,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/gloutons+-+dragons.html",
-            "thumbnail": "img/gloutons_dragons_4272.webp",
+            "thumbnail": "bg-gloutons_dragons_4272",
             "visible": true,
             "title": {
                 "main": "Gloutons & Dragons",
@@ -705,7 +705,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/la+grande+jahy+ne+perd+jamais+!.html",
-            "thumbnail": "img/la_grande_jahy_ne_perd_jamais_7884.webp",
+            "thumbnail": "bg-la_grande_jahy_ne_perd_jamais_7884",
             "visible": true,
             "title": {
                 "main": "La grande Jahy ne perd jamais !",
@@ -730,7 +730,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/grimoire+of+zero.html",
-            "thumbnail": "img/grimoire_of_zero_6429.webp",
+            "thumbnail": "bg-grimoire_of_zero_6429",
             "visible": true,
             "title": {
                 "main": "Grimoire of Zero",
@@ -755,7 +755,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/hanebad!.html",
-            "thumbnail": "img/hanebad_4864.webp",
+            "thumbnail": "bg-hanebad_4864",
             "visible": true,
             "title": {
                 "main": "Hanebad!",
@@ -780,7 +780,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/helck.html",
-            "thumbnail": "img/helck_5307.webp",
+            "thumbnail": "bg-helck_5307",
             "visible": true,
             "title": {
                 "main": "Helck",
@@ -803,7 +803,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/hyouka.html",
-            "thumbnail": "img/hyouka_1493.webp",
+            "thumbnail": "bg-hyouka_1493",
             "visible": true,
             "title": {
                 "main": "Hyouka",
@@ -827,7 +827,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/isekai+anime+studio.html",
-            "thumbnail": "img/isekai_anime_studio_23521.webp",
+            "thumbnail": "bg-isekai_anime_studio_23521",
             "visible": true,
             "title": {
                 "main": "Isekai Anime Studio",
@@ -851,7 +851,7 @@
         {
             "category": "oneshot",
             "link": "https://www.nautiljon.com/mangas/kageki+shojo!!+saison+zéro.html",
-            "thumbnail": "img/kageki_shoujo_saison_zero_16965.webp",
+            "thumbnail": "bg-kageki_shoujo_saison_zero_16965",
             "visible": true,
             "title": {
                 "main": "Kageki Shojo!! Saison Zéro",
@@ -876,7 +876,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/kageki+shoujo!!.html",
-            "thumbnail": "img/kageki_shoujo_13816.webp",
+            "thumbnail": "bg-kageki_shoujo_13816",
             "visible": true,
             "title": {
                 "main": "Kageki Shojo!!",
@@ -901,7 +901,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/kakushigoto.html",
-            "thumbnail": "img/kakushigoto_6522.webp",
+            "thumbnail": "bg-kakushigoto_6522",
             "visible": true,
             "title": {
                 "main": "KakushiGoto",
@@ -924,7 +924,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/kamisama+-+opération+divine.html",
-            "thumbnail": "img/kamisama_-_operation_divine_15183.webp",
+            "thumbnail": "bg-kamisama_-_operation_divine_15183",
             "visible": true,
             "title": {
                 "main": "Kamisama - Opération Divine",
@@ -949,7 +949,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/kuro.html",
-            "thumbnail": "img/kuro_4458.webp",
+            "thumbnail": "bg-kuro_4458",
             "visible": true,
             "title": {
                 "main": "Kuro",
@@ -973,7 +973,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/looking+up+to+magical+girls.html",
-            "thumbnail": "img/looking_up_to_magical_girls_14242.webp",
+            "thumbnail": "bg-looking_up_to_magical_girls_14242",
             "visible": false,
             "title": {
                 "main": "Looking up to Magical Girls",
@@ -998,7 +998,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/lycoris+recoil.html",
-            "thumbnail": "img/lycoris_recoil_22933.webp",
+            "thumbnail": "bg-lycoris_recoil_22933",
             "visible": true,
             "title": {
                 "main": "Lycoris Recoil",
@@ -1021,7 +1021,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/magical+girl+holy+shit.html",
-            "thumbnail": "img/magical_girl_holy_shit_8123.webp",
+            "thumbnail": "bg-magical_girl_holy_shit_8123",
             "visible": true,
             "title": {
                 "main": "Magical Girl Holy Shit",
@@ -1046,7 +1046,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/magical+revolution+-+la+princesse+réincarnée+et+la+jeune+prodige.html",
-            "thumbnail": "img/magical_revolution_-_la_princesse_reincarnee_et_la_jeune_prodige_16171.webp",
+            "thumbnail": "bg-magical_revolution_-_la_princesse_reincarnee_et_la_jeune_prodige_16171",
             "visible": true,
             "title": {
                 "main": "Magical Revolution - La Princesse réincarnée et la jeune prodige",
@@ -1071,7 +1071,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/magilumière+co.+ltd..html",
-            "thumbnail": "img/magilumiere_co_ltd_21023.webp",
+            "thumbnail": "bg-magilumiere_co_ltd_21023",
             "visible": true,
             "title": {
                 "main": "Magilumière Co. Ltd.",
@@ -1096,7 +1096,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/mai+ball!+-+feminine+football+team.html",
-            "thumbnail": "img/mai_ball_-_feminine_football_team_6384.webp",
+            "thumbnail": "bg-mai_ball_-_feminine_football_team_6384",
             "visible": false,
             "title": {
                 "main": "Mai Ball! - Feminine Football Team",
@@ -1119,7 +1119,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/medalist.html",
-            "thumbnail": "img/medalist_18831.webp",
+            "thumbnail": "bg-medalist_18831",
             "visible": true,
             "title": {
                 "main": "Medalist",
@@ -1142,7 +1142,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/mieruko-chan+-+slice+of+horror.html",
-            "thumbnail": "img/mieruko-chan_-_slice_of_horror_12348.webp",
+            "thumbnail": "bg-mieruko-chan_-_slice_of_horror_12348",
             "visible": true,
             "title": {
                 "main": "Mieruko-chan - Slice of Horror",
@@ -1167,7 +1167,7 @@
         {
             "category": "japanese",
             "link": "https://myanimelist.net/manga/97146/Mission_Impossible",
-            "thumbnail": "img/mission_impossible_230048.webp",
+            "thumbnail": "bg-mission_impossible_230048",
             "visible": true,
             "title": {
                 "main": "Mission Impossible",
@@ -1190,7 +1190,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/mon+père+est+la+reine+des+vtubeuses.html",
-            "thumbnail": "img/mon_pere_est_la_reine_des_vtubeuses_16156.webp",
+            "thumbnail": "bg-mon_pere_est_la_reine_des_vtubeuses_16156",
             "visible": true,
             "title": {
                 "main": "Mon père est la reine des Vtubeuses",
@@ -1215,7 +1215,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/nichijô.html",
-            "thumbnail": "img/nichijo_1629.webp",
+            "thumbnail": "bg-nichijo_1629",
             "visible": true,
             "title": {
                 "main": "Nichijô",
@@ -1239,7 +1239,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/oshi+no+ko.html",
-            "thumbnail": "img/oshi_no_ko_14831.webp",
+            "thumbnail": "bg-oshi_no_ko_14831",
             "visible": true,
             "title": {
                 "main": "Oshi no Ko",
@@ -1263,7 +1263,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/pop+team+epic.html",
-            "thumbnail": "img/pop_team_epic_6712.webp",
+            "thumbnail": "bg-pop_team_epic_6712",
             "visible": true,
             "title": {
                 "main": "Pop Team Epic",
@@ -1286,7 +1286,7 @@
         {
             "category": "english",
             "link": "https://www.nautiljon.com/mangas/zannen+onna+kanbu+black+general-san.html",
-            "thumbnail": "img/zannen_onna_kanbu_black_general-san_7100.webp",
+            "thumbnail": "bg-zannen_onna_kanbu_black_general-san_7100",
             "visible": true,
             "title": {
                 "main": "Precarious Woman Executive Miss Black General",
@@ -1310,7 +1310,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/quality+assurance+in+another+world.html",
-            "thumbnail": "img/quality_assurance_in_another_world_18650.webp",
+            "thumbnail": "bg-quality_assurance_in_another_world_18650",
             "visible": true,
             "title": {
                 "main": "Quality Assurance in Another World",
@@ -1334,7 +1334,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/reincarnated+as+a+sword.html",
-            "thumbnail": "img/reincarnated_as_a_sword_8731.webp",
+            "thumbnail": "bg-reincarnated_as_a_sword_8731",
             "visible": true,
             "title": {
                 "main": "Reincarnated as a Sword",
@@ -1358,7 +1358,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/reine+d-Égypte.html",
-            "thumbnail": "img/reine_d_egypte_6353.webp",
+            "thumbnail": "bg-reine_d_egypte_6353",
             "visible": true,
             "title": {
                 "main": "Reine d'Égypte",
@@ -1383,7 +1383,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/reki+-+yomi.html",
-            "thumbnail": "img/reki_yomi_15711.webp",
+            "thumbnail": "bg-reki_yomi_15711",
             "visible": true,
             "title": {
                 "main": "Reki & Yomi",
@@ -1408,7 +1408,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/the+ride-on+king.html",
-            "thumbnail": "img/the_ride-on_king_8898.webp",
+            "thumbnail": "bg-the_ride-on_king_8898",
             "visible": true,
             "title": {
                 "main": "The Ride-On King",
@@ -1432,7 +1432,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/la+romancière+et+le+mercenaire.html",
-            "thumbnail": "img/la_romanciere_et_le_mercenaire_27984.webp",
+            "thumbnail": "bg-la_romanciere_et_le_mercenaire_27984",
             "visible": true,
             "title": {
                 "main": "La Romancière et le mercenaire",
@@ -1457,7 +1457,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/sarissa+of+noctilucent+cloud.html",
-            "thumbnail": "img/sarissa_of_noctilucent_cloud_16215.webp",
+            "thumbnail": "bg-sarissa_of_noctilucent_cloud_16215",
             "visible": true,
             "title": {
                 "main": "Sarissa of Noctilucent Cloud",
@@ -1481,7 +1481,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/school-live!.html",
-            "thumbnail": "img/school-live_3802.webp",
+            "thumbnail": "bg-school-live_3802",
             "visible": true,
             "title": {
                 "main": "School-Live!",
@@ -1505,7 +1505,7 @@
         {
             "category": "english",
             "link": "https://www.nautiljon.com/mangas/see+you+tomorrow+at+the+foodcourt.html",
-            "thumbnail": "img/food_court_de_mata_ashita_30766.webp",
+            "thumbnail": "bg-food_court_de_mata_ashita_30766",
             "visible": true,
             "title": {
                 "main": "See You Tomorrow at the Foodcourt",
@@ -1529,7 +1529,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/sexy+cosplay+doll.html",
-            "thumbnail": "img/sexy_cosplay_doll_9664.webp",
+            "thumbnail": "bg-sexy_cosplay_doll_9664",
             "visible": true,
             "title": {
                 "main": "Sexy Cosplay Doll",
@@ -1554,7 +1554,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/shadows+house.html",
-            "thumbnail": "img/shadows_house_9873.webp",
+            "thumbnail": "bg-shadows_house_9873",
             "visible": true,
             "title": {
                 "main": "Shadows House",
@@ -1577,7 +1577,7 @@
         {
             "category": "japanese",
             "link": "https://www.nautiljon.com/mangas/shiroi+majo.html",
-            "thumbnail": "img/shiroi_majo_6591.webp",
+            "thumbnail": "bg-shiroi_majo_6591",
             "visible": true,
             "title": {
                 "main": "Shiroi Majo",
@@ -1601,7 +1601,7 @@
         {
             "category": "japanese",
             "link": "https://www.nautiljon.com/mangas/shiroi+majo+-+utsukushiki+sniper.html",
-            "thumbnail": "img/shiroi_majo_-_utsukushiki_sniper_12077.webp",
+            "thumbnail": "bg-shiroi_majo_-_utsukushiki_sniper_12077",
             "visible": true,
             "title": {
                 "main": "Shiroi Majo - Utsukushiki Sniper",
@@ -1625,7 +1625,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/shy.html",
-            "thumbnail": "img/shy_13131.webp",
+            "thumbnail": "bg-shy_13131",
             "visible": true,
             "title": {
                 "main": "SHY",
@@ -1648,7 +1648,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/spy×family.html",
-            "thumbnail": "img/spy_family_10465.webp",
+            "thumbnail": "bg-spy_family_10465",
             "visible": true,
             "title": {
                 "main": "SPY×FAMILY",
@@ -1671,7 +1671,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/super+cub.html",
-            "thumbnail": "img/super_cub_12330.webp",
+            "thumbnail": "bg-super_cub_12330",
             "visible": true,
             "title": {
                 "main": "Super Cub",
@@ -1694,7 +1694,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/sword+art+online+alternative+-+gun+gale+online.html",
-            "thumbnail": "img/sword_art_online_alternative_-_gun_gale_online_5257.webp",
+            "thumbnail": "bg-sword_art_online_alternative_-_gun_gale_online_5257",
             "visible": true,
             "title": {
                 "main": "Sword Art Online Alternative - Gun Gale Online",
@@ -1717,7 +1717,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/talentless.html",
-            "thumbnail": "img/talentless_7886.webp",
+            "thumbnail": "bg-talentless_7886",
             "visible": true,
             "title": {
                 "main": "Talentless",
@@ -1742,7 +1742,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/tanya+the+evil.html",
-            "thumbnail": "img/tanya_the_evil_6402.webp",
+            "thumbnail": "bg-tanya_the_evil_6402",
             "visible": true,
             "title": {
                 "main": "Tanya the Evil",
@@ -1767,7 +1767,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/trillion+game.html",
-            "thumbnail": "img/trillion_games_20853.webp",
+            "thumbnail": "bg-trillion_games_20853",
             "visible": true,
             "title": {
                 "main": "Trillion Game",
@@ -1791,7 +1791,7 @@
         {
             "category": "english",
             "link": "https://www.nautiljon.com/mangas/touhou+-+forbidden+scrollery.html",
-            "thumbnail": "img/touhou_-_forbidden_scrollery_4975.webp",
+            "thumbnail": "bg-touhou_-_forbidden_scrollery_4975",
             "visible": true,
             "title": {
                 "main": "Touhou - Forbidden Scrollery",
@@ -1815,7 +1815,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/touhou+-+lotus+eaters-+sobering.html",
-            "thumbnail": "img/touhou_-_lotus_eaters_sobering_21609.webp",
+            "thumbnail": "bg-touhou_-_lotus_eaters_sobering_21609",
             "visible": true,
             "title": {
                 "main": "Touhou - Lotus Eaters' Sobering",
@@ -1839,7 +1839,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/undead+girl+murder+farce.html",
-            "thumbnail": "img/undead_girl_murder_farce_25610.webp",
+            "thumbnail": "bg-undead_girl_murder_farce_25610",
             "visible": true,
             "title": {
                 "main": "Undead Girl Murder Farce",
@@ -1862,7 +1862,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/under+ninja.html",
-            "thumbnail": "img/under_ninja_15946.webp",
+            "thumbnail": "bg-under_ninja_15946",
             "visible": true,
             "title": {
                 "main": "Under Ninja",
@@ -1885,7 +1885,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/villainess+level+99.html",
-            "thumbnail": "img/villainess_level_99_16507.webp",
+            "thumbnail": "bg-villainess_level_99_16507",
             "visible": true,
             "title": {
                 "main": "Villainess Level 99",
@@ -1909,7 +1909,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/violence+action.html",
-            "thumbnail": "img/violence_action_7854.webp",
+            "thumbnail": "bg-violence_action_7854",
             "visible": true,
             "title": {
                 "main": "Violence Action",
@@ -1933,7 +1933,7 @@
         {
             "category": "english",
             "link": "https://www.nautiljon.com/mangas/hôtel+voynich.html",
-            "thumbnail": "img/hotel_voynich_6904.webp",
+            "thumbnail": "bg-hotel_voynich_6904",
             "visible": true,
             "title": {
                 "main": "Hôtel Voynich",
@@ -1957,7 +1957,7 @@
         {
             "category": "english",
             "link": "https://www.nautiljon.com/mangas/je+ne+suis+pas+populaire+et+c-est+de+votre+faute+!.html",
-            "thumbnail": "img/je_ne_suis_pas_populaire_et_c_est_de_votre_faute_4080.webp",
+            "thumbnail": "bg-je_ne_suis_pas_populaire_et_c_est_de_votre_faute_4080",
             "visible": true,
             "title": {
                 "main": "Je ne suis pas populaire et c'est de votre faute !",
@@ -1983,7 +1983,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/yakuza+reincarnation.html",
-            "thumbnail": "img/yakuza_reincarnation_14952.webp",
+            "thumbnail": "bg-yakuza_reincarnation_14952",
             "visible": true,
             "title": {
                 "main": "Yakuza Reincarnation",
@@ -2007,7 +2007,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/yotsuba-!.html",
-            "thumbnail": "img/yotsuba_293.webp",
+            "thumbnail": "bg-yotsuba_293",
             "visible": true,
             "title": {
                 "main": "Yotsuba&!",
@@ -2031,7 +2031,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/the+strange+house.html",
-            "thumbnail": "img/the_strange_house_25383.webp",
+            "thumbnail": "bg-the_strange_house_25383",
             "visible": true,
             "title": {
                 "main": "The Strange House",
@@ -2055,7 +2055,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/völundio+-+chroniques+des+lames+sacrées.html",
-            "thumbnail": "img/volundio_-_chroniques_des_lames_sacrees_19047.webp",
+            "thumbnail": "bg-volundio_-_chroniques_des_lames_sacrees_19047",
             "visible": true,
             "title": {
                 "main": "Völundio - Chroniques des Lames Sacrées",
@@ -2079,7 +2079,7 @@
         {
             "category": "japanese",
             "link": "https://myanimelist.net/manga/141234/Holoearth_Chronicles_Side_E_-_Yamato_Kasou_Kaiitan",
-            "thumbnail": "img/holoearth_chronicles_side_e_-_yamato_phantasia_313634.webp",
+            "thumbnail": "bg-holoearth_chronicles_side_e_-_yamato_phantasia_313634",
             "visible": true,
             "title": {
                 "main": "HoloEarth Chronicles Side:E - Yamato Phantasia",
@@ -2103,7 +2103,7 @@
         {
             "category": "auto",
             "link": "https://www.nautiljon.com/mangas/dédale.html",
-            "thumbnail": "img/dedale_5595.webp",
+            "thumbnail": "bg-dedale_5595",
             "visible": true,
             "title": {
                 "main": "Dédale",

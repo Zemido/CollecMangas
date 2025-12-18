@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ma Collection de Mangas</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/images.css">
     <link rel="icon" href="favicon.svg">
     <style>
         body {
@@ -25,7 +25,6 @@
         }
         .manga-card {
             transition: transform 0.3s;
-            max-width: max-content;
         }
         .manga-card:hover {
             transform: scale(1.05);
@@ -146,7 +145,7 @@
     </div>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/bootstrap.bundle.min.js"></script>
     <script>
         let mangas = [];
         let currentMangas = [];
@@ -292,8 +291,7 @@
                 item.className = `carousel-item ${index === 0 ? 'active' : ''}`;
                 item.innerHTML = `
                     <div class="d-flex justify-content-center">
-                        <div class="manga-card position-relative" style="height: 300px; cursor: pointer;" onclick="showMangaDetails(this)" data-manga-id="${manga.id}">
-                            <img src="${manga.thumbnail}" class="img-fluid" alt="${manga.title.main}">
+                        <div class="manga-card position-relative ${manga.thumbnail}" style="height: 300px; cursor: pointer;" onclick="showMangaDetails(this)" data-manga-id="${manga.id}">
                             <div class="position-absolute bottom-0 start-0 w-100 text-white p-2" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
                                 <h5 class="mb-0">${manga.title.main}</h5>
                             </div>
@@ -314,8 +312,7 @@
                 const col = document.createElement('div');
                 col.className = `col-12 col-sm-6 col-md-4 col-lg-3 mb-4${window.innerWidth<window.innerHeight ? " vertical-screen":""}`;
                 col.innerHTML = `
-                    <div class="manga-card position-relative" style="height: 300px; cursor: pointer;" onclick="showMangaDetails(this)" data-manga-id="${manga.id}">
-                        <img src="${manga.thumbnail}" class="img-fluid" alt="${manga.title.main}">
+                    <div class="manga-card position-relative ${manga.thumbnail}" style="height: 300px; cursor: pointer;" onclick="showMangaDetails(this)" data-manga-id="${manga.id}">
                         <div class="position-absolute bottom-0 start-0 w-100 text-white p-2" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
                             <h5 class="mb-0">${manga.title.main}</h5>
                         </div>
@@ -439,7 +436,7 @@
             const modalBody = document.getElementById('mangaModalBody');
             let content = '<div class="row">';
             // Left side: thumbnail
-            content += `<div class="col-md-4"><img src="${manga.thumbnail}" class="img-fluid" alt="${manga.title.main}"><p></p>`;
+            content += `<div class="col-md-4"><p class="${manga.thumbnail}"></p>`;
             content += `<p><strong>Éditeur:</strong> ${manga.editor}</p>`;
             content += `<p><strong>Volumes VO:</strong> ${manga.volumesVO}</p>`;
             content += `<p><strong>Volumes VF:</strong> ${manga.volumesVF}</p>`;
