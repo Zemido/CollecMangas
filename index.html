@@ -35,6 +35,10 @@
         #carouselPrev,#carouselNext {
             filter: none;
         }
+        #mangaGrid {
+            opacity: 0;
+            transition: opacity 0.2s ease-in;
+        }
         .tag-container {
             padding: 0;
         }
@@ -318,22 +322,28 @@
 
         function populateGrid(titleFilter = '') {
             const grid = document.getElementById('mangaGrid');
-            grid.innerHTML = '';
-            const filteredMangas = currentMangas.filter(manga =>
-                manga.title.main.toLowerCase().includes(titleFilter.toLowerCase())
-            );
-            filteredMangas.forEach(manga => {
-                const col = document.createElement('div');
-                col.className = `col-12 col-sm-6 col-md-4 col-lg-3 mb-4${window.innerWidth<window.innerHeight ? " vertical-screen":""}`;
-                col.innerHTML = `
-                    <div class="manga-card position-relative ${manga.thumbnail}" style="height: 300px; cursor: pointer;" onclick="showMangaDetails(this)" data-manga-id="${manga.id}">
-                        <div class="position-absolute bottom-0 start-0 w-100 text-white p-2" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
-                            <h5 class="mb-0">${manga.title.main}</h5>
+            grid.style.transitionTimingFunction = 'ease-in';
+            grid.style.opacity = 0;
+            setTimeout(()=> {
+                grid.innerHTML = '';
+                const filteredMangas = currentMangas.filter(manga =>
+                    manga.title.main.toLowerCase().includes(titleFilter.toLowerCase())
+                );
+                filteredMangas.forEach(manga => {
+                    const col = document.createElement('div');
+                    col.className = `col-12 col-sm-6 col-md-4 col-lg-3 mb-4${window.innerWidth<window.innerHeight ? " vertical-screen":""}`;
+                    col.innerHTML = `
+                        <div class="manga-card position-relative ${manga.thumbnail}" style="height: 300px; cursor: pointer;" onclick="showMangaDetails(this)" data-manga-id="${manga.id}">
+                            <div class="position-absolute bottom-0 start-0 w-100 text-white p-2" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                                <h5 class="mb-0">${manga.title.main}</h5>
+                            </div>
                         </div>
-                    </div>
-                `;
-                grid.appendChild(col);
-            });
+                    `;
+                    grid.appendChild(col);
+                });
+                grid.style.transitionTimingFunction = 'ease-out';
+                grid.style.opacity=1;
+            },300);
         }
 
         document.getElementById('searchInput').addEventListener('input', () => {
