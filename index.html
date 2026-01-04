@@ -396,7 +396,6 @@
                 searchItems.push({type: 'status', value: value});
             }
             const filterMethod = document.querySelector('[name=logicRadio]:checked').value === 'or' ? 'some' : 'every';
-            console.log(searchItems, filterMethod);
             const filtered = mangas.filter(manga => searchItems[filterMethod](({type,value}) => {
                 switch(type) {
                     case 'author': return manga.author.map(a => a.split(' (')[0]).includes(value);
