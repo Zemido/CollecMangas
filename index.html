@@ -410,9 +410,7 @@
                     case 'status': return manga.status === value;
                 }
             }));
-            if(searchItems.length > 0) {
-                currentMangas = filtered;
-            }
+            currentMangas = searchItems.length > 0 ? filtered : mangas;
             currentMangas.sort((a,b) => a.id.localeCompare(b.id));
             populateGrid(document.getElementById('searchInput').value);
             document.getElementById('searchInput').placeholder = searchItems.length === 0 ? 'Chercher un manga...' : searchItems.map(({value})=>`"${value}"`).join(filterMethod==='some'?' OU ':' ET ');
