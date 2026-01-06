@@ -74,11 +74,11 @@
                 <!-- Carousel items will be populated by JS -->
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#mangaCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" id="carouselPrev" aria-hidden="true"></span>
+                <span class="carousel-control-prev-icon" id="carouselPrev"></span>
                 <span class="visually-hidden">Précédent</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#mangaCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" id="carouselNext" aria-hidden="true"></span>
+                <span class="carousel-control-next-icon" id="carouselNext"></span>
                 <span class="visually-hidden">Suivant</span>
             </button>
         </div>
@@ -89,7 +89,7 @@
     </div>
 
     <!-- Filter Modal -->
-    <div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
+    <div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -136,15 +136,15 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" id="resetBtn">Reset</button>
-                    <button type="button" class="btn btn-primary" id="applyFilterBtn">Filtrer</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="resetBtn">Reset</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="applyFilterBtn">Filtrer</button>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Manga Details Modal -->
-    <div class="modal fade" id="mangaModal" tabindex="-1" aria-labelledby="mangaModalLabel" aria-hidden="true">
+    <div class="modal fade" id="mangaModal" tabindex="-1" aria-labelledby="mangaModalLabel">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -493,8 +493,8 @@
             }
             content += '</ul>';
             // Other info
-            content += `<p><strong>Genres:</strong> ${manga.genres.map(g => createBadge(g,uniqueGenres[g],`onclick="filterByGenre('${g}')"`)).join(' ')}</p>`;
-            content += `<p><strong>Thèmes:</strong> ${manga.themes.map(t => createBadge(t,uniqueThemes[t],`onclick="filterByTheme('${t}')"`)).join(' ')}</p>`;
+            content += `<p><strong>Genres:</strong> ${manga.genres.map(g => createBadge(g,uniqueGenres[g],`onclick="simpleFilter('genre','${g}')"`)).join(' ')}</p>`;
+            content += `<p><strong>Thèmes:</strong> ${manga.themes.map(t => createBadge(t,uniqueThemes[t],`onclick="simpleFilter('theme','${t}')"`)).join(' ')}</p>`;
             content += `<p><strong>Auteur${manga.author.length>1?'s':''}:</strong> ${manga.author.join(', ')}</p>`;
             content += `<p><strong>Synopsis:</strong><br/>${unbreakSpaces(manga.synopsis)}</p><hr/>`;
             content += `<p><strong>Avis ☝🤓:</strong> ${unbreakSpaces(manga.review)}</p>`;
@@ -509,35 +509,10 @@
             if (modal) modal.hide();
         }
 
-        function filterByGenre(genre) {
+        function simpleFilter(type,item) {
             closeMangaModal();
-            // Reset all filters
-            document.getElementById('authorInput').value = '';
-            document.querySelectorAll('#genresContainer input').forEach(cb => cb.checked = false);
-            document.querySelectorAll('#themesContainer input').forEach(cb => cb.checked = false);
-            document.getElementById('editorInput').value = '';
-            document.getElementById('statusSelect').querySelectorAll('option').forEach(o => o.selected = false);
-            document.getElementById('orRadio').checked = true;
-            // Set the genre
-            const cb = document.getElementById(`genre${genre.replace(/\s+/g, '')}`);
-            if (cb) cb.checked = true;
-            // Apply filter
-            document.getElementById('applyFilterBtn').click();
-        }
-
-        function filterByTheme(theme) {
-            closeMangaModal();
-            // Reset all filters
-            document.getElementById('authorInput').value = '';
-            document.querySelectorAll('#genresContainer input').forEach(cb => cb.checked = false);
-            document.querySelectorAll('#themesContainer input').forEach(cb => cb.checked = false);
-            document.getElementById('editorInput').value = '';
-            document.getElementById('statusSelect').querySelectorAll('option').forEach(o => o.selected = false);
-            document.getElementById('orRadio').checked = true;
-            // Set the theme
-            const cb = document.getElementById(`theme${theme.replace(/\s+/g, '')}`);
-            if (cb) cb.checked = true;
-            // Apply filter
+            resetFilter();
+            document.getElementById(`${type}${item.replace(/\s+/g,'')}`).checked = true;
             document.getElementById('applyFilterBtn').click();
         }
     </script>
