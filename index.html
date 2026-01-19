@@ -463,8 +463,8 @@
                 content += `<p><strong>Prochaine sortie:</strong> ${new Date(manga.nextRelease).toLocaleDateString()}</p>`;
             }
             content += `<p><strong>Collection:</strong><div class="progress">`;
-            for(const tome of manga.tomes) {
-                content += `<div class="progress-bar ${collectionColors[tome]}" role="progressbar" style="width: ${100/manga.volumesVO}%"></div>`;
+            for(let i=0; i<manga.tomes.length; i++) {
+                content += `<div class="border progress-bar ${collectionColors[manga.tomes[i]]}" role="progressbar" style="width:${100/manga.volumesVO}%" data-bs-toggle="tooltip" data-bs-title="${i+1}"></div>`;
             }
             content += '</div></p>';
             if(manga.mediums.length > 0) {
@@ -500,6 +500,10 @@
             content += `<p><strong>Avis ☝🤓:</strong> ${unbreakSpaces(manga.review)}</p>`;
             content += '</div></div>';
             modalBody.innerHTML = content;
+
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
             const modal = new bootstrap.Modal(document.getElementById('mangaModal'));
             modal.show();
         }
