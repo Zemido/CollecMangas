@@ -395,8 +395,8 @@
             if(value = document.getElementById('statusSelect').selectedOptions[0].value) {
                 searchItems.push({type: 'status', value: value});
             }
-            const filterMethod = document.querySelector('[name=logicRadio]:checked').value === 'or' ? 'some' : 'every';
-            const filtered = mangas.filter(manga => searchItems[filterMethod](({type,value}) => {
+            searchItems.logic = searchItems[document.querySelector('[name=logicRadio]:checked').value === 'or' ? 'some' : 'every'];
+            const filtered = mangas.filter(manga => searchItems.logic(({type,value}) => {
                 switch(type) {
                     case 'author': return manga.author.map(a => a.split(' (')[0]).includes(value);
                     case 'genre': return manga.genres.includes(value);
@@ -413,7 +413,7 @@
             currentMangas = searchItems.length > 0 ? filtered : mangas;
             currentMangas.sort((a,b) => a.id.localeCompare(b.id));
             populateGrid(document.getElementById('searchInput').value);
-            document.getElementById('searchInput').placeholder = searchItems.length === 0 ? 'Chercher un manga...' : searchItems.map(({value})=>`"${value}"`).join(filterMethod==='some'?' OU ':' ET ');
+            document.getElementById('searchInput').placeholder = searchItems.length === 0 ? 'Chercher un manga...' : searchItems.map(({value})=>`"${value}"`).join(searchItems.logic===searchItems.some?' OU ':' ET ');
             const modal = bootstrap.Modal.getInstance(document.getElementById('filterModal'));
             modal.hide();
         });
