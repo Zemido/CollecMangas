@@ -2123,6 +2123,32 @@
             "mediums": [],
             "tomes": [1,1],
             "nextRelease": ""
+        },
+        {
+            "category": "auto",
+            "link": "https://www.nautiljon.com/mangas/entre+les+lignes.html",
+            "thumbnail": "bg-entre_les_lignes_8808",
+            "visible": true,
+            "title": {
+                "main": "Entre les lignes",
+                "english": "Journal with witch",
+                "other": "Foreign Country Diary",
+                "romaji": "Ikoku Nikki",
+                "kanji": "違国日記"
+            },
+            "id": "entre les lignes",
+            "genres": ["Drame","Slice of Life"],
+            "themes": ["Amitié","Famille","Quotidien"],
+            "author": ["Yamashita Tomoko"],
+            "editor": "Kana",
+            "volumesVO": 11,
+            "volumesVF": 11,
+            "status": "Terminé",
+            "synopsis": "À 15 ans, <b>Asa</b> a perdu ses deux parents à la fois, dans un accident de voiture. Recueillie par sa tante <b>Makio</b>, romancière dans la trentaine, elle découvre soudain le monde à l'extérieur de son petit cocon familial.<br/><br/>Poussée à grandir trop tôt, trop vite, <b>Asa</b> n'est toutefois pas livrée à elle-même. <b>Makio</b> est là pour la guider dans son cheminement, avec beaucoup de maladresse mais du mieux qu'elle le peut malgré sa nature introvertie.",
+            "review": "",
+            "mediums": ["Anime"],
+            "tomes": [2,2,2,2,2,2,2,2,2,2,2],
+            "nextRelease": ""
         }
     ],
     "editors": {
