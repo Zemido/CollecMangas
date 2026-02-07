@@ -1131,12 +1131,12 @@
             "author": ["TSURUMAIKADA"],
             "editor": "nobi nobi!",
             "volumesVO": 13,
-            "volumesVF": 11,
+            "volumesVF": 12,
             "status": "En cours",
             "synopsis": "Le Japon est reconnu comme l'un des meilleurs pays au monde dans le domaine du patinage artistique. Cependant, l'accès au prestigieux championnat national, qui se déroule chaque année, est réservé à une poignée de privilégiés. <b>Tsukasa</b>, un ancien athlète, a vu son rêve se briser après avoir consacré toute sa vie à ce sport. D'un autre côté, <b>Inori</b>, âgée seulement de 11 ans, nourrit le rêve de devenir une grande patineuse, bien que personne ne croie en elle. Le destin réunit ces deux êtres sur la glace, et ensemble, ils se préparent à conquérir le monde avec une motivation sans égale !<br/><br/><b><i>Si je vous disais que je voulais devenir la numéro 1 mondiale, vous accepteriez de m'y aider ?</i></b>",
             "review": "",
             "mediums": ["Anime"],
-            "tomes": [1,1,1,1,1,1,1,1,1,1,1,0,0],
+            "tomes": [1,1,1,1,1,1,1,1,1,1,1,1,0],
             "nextRelease": "2026-02-04"
         },
         {
@@ -1637,12 +1637,12 @@
             "author": ["Miki Bukimi"],
             "editor": "Kana",
             "volumesVO": 32,
-            "volumesVF": 26,
+            "volumesVF": 27,
             "status": "En cours",
             "synopsis": "Au milieu du 21e siècle, toute forme de guerre a disparu de la surface de la Terre.<br/><br/>La raison ? L'apparition de super-héros dans chacun des pays du globe, se chargeant de maintenir la paix, la justice et la sécurité des citoyens.<br/><br/>Au Japon, c'est la timide <b>Teru Momijiyama</b> qui a été choisie pour devenir l'héroïne de son pays, <b>Shy</b>.<br/><br/>Alors qu'elle doute encore de sa capacité à être à la hauteur de sa tâche, de nombreux défis se dressent devant elle, apportant la preuve que sa détermination à sauver tout ceux qui sont à sa portée fait d'elle une héroïne exceptionnelle.",
             "review": "",
             "mediums": ["Anime"],
-            "tomes": [1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0],
+            "tomes": [1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0],
             "nextRelease": "2026-02-06"
         },
         {
@@ -2148,6 +2148,55 @@
             "review": "",
             "mediums": ["Anime"],
             "tomes": [2,2,2,2,2,2,2,2,2,2,2],
+            "nextRelease": ""
+        },
+        {
+            "category": "auto",
+            "link": "https://www.nautiljon.com/mangas/développeurs+-+bienvenue+dans+le+marécage+de+la+création.html",
+            "thumbnail": "bg-developpeurs_-_bienvenue_dans_le_marecage_de_la_creation_32160",
+            "visible": true,
+            "title": {
+                "main": "Développeurs - Bienvenue dans le marécage de la création",
+                "romaji": "Developers - Game Sōsaku Numa e Yōkoso",
+                "kanji": "デベロッパーズ～ゲーム創作沼へようこそ～"
+            },
+            "id": "developpeurs",
+            "genres": ["Comédie","Drame","Romance","Slice of Life"],
+            "themes": ["Jeux vidéo","Travail"],
+            "author": ["Arai Harumaki"],
+            "editor": "Mana Books",
+            "volumesVO": 3,
+            "volumesVF": 1,
+            "status": "Terminé en VO",
+            "synopsis": "<b>Itto Yamamoto</b> a récemment intégré une entreprise de développement de jeux vidéo. Il adore son travail, mais regrette de ne pas pouvoir exprimer davantage sa créativité au milieu d'une équipe de plus de cent personnes. Un jour, il participe à un salon de jeux indés et fait la rencontre de <b>Haruka</b>, une jeune développeuse. <b>Itto</b> se retrouve alors aspiré malgré lui dans le monde chaotique des jeux indés...",
+            "review": "",
+            "mediums": [],
+            "tomes": [1,0,0],
+            "nextRelease": ""
+        },
+        {
+            "category": "auto",
+            "link": "https://www.nautiljon.com/mangas/reincarnated+as+a+pretty+fantasy+girl.html",
+            "thumbnail": "bg-reincarnated_as_a_pretty_fantasy_girl_14541",
+            "visible": true,
+            "title": {
+                "main": "Reincarnated as a Pretty Fantasy Girl",
+                "english": "Life with an Ordinary Guy Who Reincarnated into a Total Fantasy Knockout",
+                "romaji": "Fantasy Bishōjo Juniku Oji-san to",
+                "kanji": "異世界<ファンタジー>美少女受肉おじさんと"
+            },
+            "id": "reincarnated as a pretty fantasy girl",
+            "genres": ["Action","Aventure","Comédie","Fantasy","Romance"],
+            "themes": ["Autre monde","Gender Bender"],
+            "author": ["Tsurusaki Yu (Scénario)","Ikezawa Shin (Dessin)"],
+            "editor": "Meian",
+            "volumesVO": 16,
+            "volumesVF": 5,
+            "status": "En cours",
+            "synopsis": "<b>Hinata Tachibana</b>, un employé de bureau âgé de 32 ans désespéré en amour, est transporté dans un monde parallèle avec son meilleur ami, <b>Tsukasa Jingûji</b>, un beau gosse un peu aigri.<br/><br/>Le problème ? La déesse qui les a invoqués est pleine de malice et transforme Hinata en une belle jeune fille blonde !<br/><br/>Pour retrouver son apparence d'origine, il lui faudra vaincre le roi démon.<br/><br/>C'est le début d'un très long périple semé d'embûches, mais surtout d'une comédie romantique gender bender, un ovni dans le genre isekai !",
+            "review": "",
+            "mediums": ["Anime"],
+            "tomes": [1,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0],
             "nextRelease": ""
         }
     ],
