@@ -1503,7 +1503,7 @@
             "nextRelease": "2025-12-17"
         },
         {
-            "category": "english",
+            "category": "auto",
             "link": "https://www.nautiljon.com/mangas/see+you+tomorrow+at+the+foodcourt.html",
             "thumbnail": "bg-food_court_de_mata_ashita_30766",
             "visible": true,
@@ -1518,13 +1518,13 @@
             "author": ["Nariie Shinichiro"],
             "editor": "Shiba Éditions",
             "volumesVO": 2,
-            "volumesVF": 0,
+            "volumesVF": 1,
             "status": "En cours",
             "synopsis": "Avec son air studieux d'étudiante modèle, <b>Wada</b> a l'air inaccessible. Avec sa peau bronzée et ses longs cheveux blonds, <b>Yamamoto</b> impressionne. Bien que les deux jeunes filles fréquentent des lycées différents, elles se retrouvent presque tous les jours dans l'aire de restauration d'un centre commercial. Ensemble, elles partagent des émotions qu'elles sont les seules à connaître.",
             "review": "",
             "mediums": ["Anime"],
             "tomes": [1,0],
-            "nextRelease": "2026-01-23"
+            "nextRelease": ""
         },
         {
             "category": "auto",
