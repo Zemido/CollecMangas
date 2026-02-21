@@ -378,13 +378,13 @@
             "author": ["Kotoyama"],
             "editor": "Kurokawa",
             "volumesVO": 20,
-            "volumesVF": 15,
+            "volumesVF": 16,
             "status": "Terminé",
             "synopsis": "<b><i>En une rencontre, la vie peut reprendre du mordant !</i></b><br/><br/>Impossible de résister à l'appel de la nuit !!<br/>La nuit où <b>Kô Yamori</b>, collégien et éternel insomniaque, décide de sortir se promener seul, il fait la rencontre de <b>Nazuna Nanakusa</b>, une jolie vampire.<br/><br/><i>\"Veille jusqu'à ce que tu sois satisfait de ta journée, Garçon !\"</i><br/>Sa veillée seule avec elle va bouleverser le destin de <b>Kô</b>...",
             "review": "",
             "mediums": ["Anime"],
-            "tomes": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0],
-            "nextRelease": "2026-02-12"
+            "tomes": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0],
+            "nextRelease": "2026-05-13"
         },
         {
             "category": "auto",
@@ -816,13 +816,13 @@
             "author": ["Yonezawa Honobu (Scénario)","Taskohna (Dessin)"],
             "editor": "VEGA-Dupuis",
             "volumesVO": 16,
-            "volumesVF": 4,
+            "volumesVF": 5,
             "status": "En cours",
             "synopsis": "<b>Hotaro</b>, jeune lycéen désinvolte, intègre le club de littérature de son école pour faire plaisir à sa sœur. Il va y rencontrer <b>Eru</b>, une élève dynamique dont la curiosité va l'amener à s'impliquer bien plus que prévu dans la vie de son établissement en résolvant de nombreux mystères...",
             "review": "",
             "mediums": ["Anime"],
-            "tomes": [1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0],
-            "nextRelease": "2026-02-20"
+            "tomes": [1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0],
+            "nextRelease": ""
         },
         {
             "category": "auto",
@@ -1565,14 +1565,14 @@
             "themes": ["Amitié","Maids","Noblesse","Poupées","Secrets"],
             "author": ["Somato"],
             "editor": "Glénat",
-            "volumesVO": 20,
-            "volumesVF": 18,
+            "volumesVO": 21,
+            "volumesVF": 19,
             "status": "En cours",
             "synopsis": "Il existe quelque part un vaste manoir fréquenté uniquement par des nobles qui sont en réalité des ombres sans visage et des poupées vivantes qui passent une grande partie de leur temps à nettoyer la suie émise par leurs mystérieux maîtres.<br/><br/>Ainsi, nous suivons l'histoire d'<b>Emilico</b>, une jeune et joyeuse poupée vivante, qui découvre ses fonctions de servante avec <b>Kate</b> sa mystérieuse maîtresse.",
             "review": "",
             "mediums": ["Anime"],
-            "tomes": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0],
-            "nextRelease": "2026-02-18"
+            "tomes": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0],
+            "nextRelease": "2026-07-01"
         },
         {
             "category": "japanese",
