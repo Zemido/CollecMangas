@@ -545,14 +545,14 @@
             "themes": ["Amitié","Club","Quotidien","École"],
             "author": ["Owara Sumito"],
             "editor": "nobi nobi!",
-            "volumesVO": 9,
-            "volumesVF": 6,
+            "volumesVO": 10,
+            "volumesVF": 7,
             "status": "En cours",
             "synopsis": "<b>Midori Asakusa</b>, en première année de lycée, est une passionnée d'animation. Pleine d'imagination, elle passe son temps à dessiner dans son carnet de croquis. Son objectif : créer son propre dessin animé. Mais seule, c'est mission impossible ! Et ce n'est pas son amie, l'impassible <b>Sayaka Kanamori</b> uniquement intéressée par l'argent, qui va l'aider. Un jour, elles font la rencontre de <b>Tsubame Mizusaki</b>, une fille de leur âge, célèbre mannequin pour des magazines de mode à ses heures perdues. Mais, douée pour donner vie à des personnages, elle rêve d'autres horizons : devenir animatrice. Une fois réunies, c'est le déclic pour ce trio électrisant : pourquoi ne pas monter ensemble un club au lycée afin de lancer leur projet de création d'animé ?!",
             "review": "",
             "mediums": ["Anime"],
-            "tomes": [1,1,1,2,1,1,0,0],
-            "nextRelease": "2026-02-18"
+            "tomes": [1,1,1,2,1,1,1,0,0],
+            "nextRelease": "2026-07-08"
         },
         {
             "category": "auto",
