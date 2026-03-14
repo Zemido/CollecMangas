@@ -86,6 +86,10 @@
         <div id="mangaGrid" class="row">
             <!-- Manga cards will be populated by JS -->
         </div>
+        
+        <div id="footer" class="row text-secondary">
+            <!-- Footer will be populated by JS -->
+        </div>
     </div>
 
     <!-- Filter Modal -->
@@ -187,6 +191,10 @@
                 }
                 currentMangas = [...mangas];
                 currentMangas.sort((a, b) => a.id.localeCompare(b.id));
+                document.getElementById('footer').innerHTML = `Nombre de séries : ${currentMangas.length}. Volumes achetés: ${
+                    currentMangas.reduce((a,b)=>a+b.tomes.filter(t=>t===1).length,0)}/${
+                    nbVolumesTotalVF = currentMangas.reduce((a,b)=>a+b.volumesVF,0)} (total volumes VO: ${
+                    nbVolumesTotalVO = currentMangas.reduce((a,b)=>a+b.volumesVO,0)})`;
                 extractUniques();
                 populateDatalist();
                 populateModal();
