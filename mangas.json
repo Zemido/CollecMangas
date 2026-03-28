@@ -2044,13 +2044,37 @@
             "author": ["Uketsu (Scénario)","Ayano Kyo (Dessin)"],
             "editor": "Kana",
             "volumesVO": 6,
-            "volumesVF": 2,
+            "volumesVF": 3,
             "status": "En cours",
             "synopsis": "Un pigiste spécialisé dans le paranormal et l'horreur reçoit un jour la visite d'un homme qui envisage d'acheter une maison. Cependant, les plans de cette dernière sont plus qu'étranges, laissant supposer qu'il y a potentiellement eu des actes de maltraitance d'enfant à l'intérieur...<br/><br/>Quel est donc le secret caché derrière ces curieux agencements de pièces ?<br/><br/>Accompagné d'un architecte de renom, il va mener son enquête au sujet de cette drôle de bâtisse...",
             "review": "",
             "mediums": [],
-            "tomes": [1,1,0,0,0,0],
-            "nextRelease": "2026-03-20"
+            "tomes": [1,1,1,0,0,0],
+            "nextRelease": "2026-06-05"
+        },
+        {
+            "category": "auto",
+            "link": "https://www.nautiljon.com/mangas/the+strange+pictures.html",
+            "thumbnail": "bg-strange_pictures_29632",
+            "visible": true,
+            "title": {
+                "main": "The Strange Pictures",
+                "romaji": "Hen na E",
+                "kanji": "変な絵"
+            },
+            "id": "strange pictures",
+            "genres": ["Horreur","Mystère","Surnaturel"],
+            "themes": ["Enquête","Secrets"],
+            "author": ["Uketsu (Scénario)","Aiba Kiko (Dessin)"],
+            "editor": "Kana",
+            "volumesVO": 4,
+            "volumesVF": 1,
+            "status": "En cours",
+            "synopsis": "<b>Sasaki</b> est membre d'un cercle d'occultisme. Un jour, son ami <b>Kurihara</b> lui parle de l'existence d'un blog sur lequel figure l'étrange message \"Le crime que tu as commis\", ainsi que le dessin d'une jeune femme dans le vent réalisé par une certaine <b>Yuki</b>, épouse de l'auteur du blog...<br/><br/>Saurez-vous résoudre les mystères que cachent neuf étranges dessins ??",
+            "review": "",
+            "mediums": [],
+            "tomes": [1,0,0,0],
+            "nextRelease": "2026-06-05"
         },
         {
             "category": "auto",

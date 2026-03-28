@@ -523,6 +523,7 @@
 
         function simpleFilter(type,item) {
             closeMangaModal();
+            document.getElementById('searchInput').value = '';
             resetFilter();
             document.getElementById(`${type}${item.replace(/\s+/g,'')}`).checked = true;
             document.getElementById('applyFilterBtn').click();
