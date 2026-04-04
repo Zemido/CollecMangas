@@ -643,13 +643,13 @@
             "themes": ["Amitié","Combats","Contes et légendes","Démons","Elfe","Magie","Médiéval","Nostalgie","Quotidien","Voyage"],
             "author": ["Yamada Kanehito (Scénario)", "Abe Tsukasa (Dessin)"],
             "editor": "Ki-oon",
-            "volumesVO": 14,
-            "volumesVF": 14,
+            "volumesVO": 15,
+            "volumesVF": 15,
             "status": "En cours",
             "synopsis": "Le jeune héros <b>Himmel</b> et ses compagnons, l'elfe <b>Frieren</b>, le nain <b>Eisen</b> et le prêtre <b>Heiter</b>, rentrent victorieux de leur combat contre le roi des démons. Au bout de dix années d'efforts, ils ont ramené la paix dans le royaume. Il est temps pour eux de retrouver une vie normale... Difficile à imaginer après tant d'aventures en commun !<br/><br/><b>Frieren</b>, elle, ne semble guère touchée par la séparation. Pour la magicienne à la longévité exceptionnelle, une décennie ne pèse pas lourd. Elle reprend la route en solo et promet de retrouver ses camarades un demi-siècle plus tard. Elle tient parole... mais ces retrouvailles sont aussi les derniers instants passés avec <b>Himmel</b>, devenu un vieillard qui s'éteint paisiblement sous ses yeux. <b>Frieren</b> est sous le choc... La vie des humains est si courte ! L'elfe a beau être experte en magie, il lui reste encore un long chemin à parcourir pour comprendre la race humaine... Son nouvel objectif : s'initier aux arcanes du cœur !",
             "review": "",
             "mediums": ["Anime"],
-            "tomes": [1,1,1,1,1,1,1,1,1,1,1,1,1,1],
+            "tomes": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
             "nextRelease": ""
         },
         {
@@ -1085,13 +1085,13 @@
             "author": ["Iwata Sekka (Scénario)","Aoki Yu (Dessin)"],
             "editor": "Kana",
             "volumesVO": 18,
-            "volumesVF": 8,
+            "volumesVF": 9,
             "status": "Terminé en VO",
             "synopsis": "Suite à l'apparition soudaine des <b>Kaii</b>, créatures mystérieuses s'attaquant à la population, un nouveau métier a vu le jour : celui de <b>Magical Girl</b>. Ces employées de compagnies privées ont la grande responsabilité d'exterminer les <b>Kaii</b>, et leur nombre sans cesse croissant a développé un véritable marché de l'emploi des <b>Magical Girls</b> durant ces dernières années.<br/><br/>Tandis que <b>Sakuragi Kana</b> passait un enième entretien en vue d'intégrer le monde du travail, un <b>Kaii</b> fait son apparition dans l'immeuble de l'entreprise à laquelle elle postulait. Elle se retrouve ainsi à assister la <b>Magical Girl</b> appelée sur les lieux, l'aidant à vaincre la créature. Comblée par son travail de soutien, la <b>Magical Girl</b> lui propose alors d'intégrer la start-up dans laquelle elle travaille : <b>Magilumiere</b> !",
             "review": "",
             "mediums": ["Anime"],
-            "tomes": [1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0],
-            "nextRelease": "2026-01-09"
+            "tomes": [1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0],
+            "nextRelease": "2026-08-21"
         },
         {
             "category": "auto",
