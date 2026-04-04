@@ -2091,14 +2091,14 @@
             "themes": ["Travail"],
             "author": ["Nanao Nanaki"],
             "editor": "Doki-Doki",
-            "volumesVO": 8,
-            "volumesVF": 2,
+            "volumesVO": 9,
+            "volumesVF": 3,
             "status": "En cours",
             "synopsis": "<b>Cléo</b>, mercenaire désabusé, ne rêve que de pouvoir mener une vie tranquille à la campagne. Mais sa dernière quête tourne au désastre. Il tombe nez à nez avec des brigands armés de Differlames, des épées aux pouvoirs démoniaques décuplant la puissance de ceux qui les possèdent.<br/>Sauvé in extremis par <b>Kohaku</b>, semi-humaine énigmatique, il découvre alors sa mort prophétisée... Mais cette dernière est bien décidée à le protéger. Sous ses apparences de petite fille, elle cache en fait une force aussi burlesque qu'implacable.<br/><br/>Et tous deux fuiront ainsi à travers un monde ravagé par la \"Guerre des Differlames\" en quête d'un havre de paix qu'ils tenteront tant bien que mal de mettre en place.",
             "review": "",
             "mediums": [],
-            "tomes": [1,1,0,0,0,0,0,0],
-            "nextRelease": "2026-04-01"
+            "tomes": [1,1,1,0,0,0,0,0,0],
+            "nextRelease": "2026-08-19"
         },
         {
             "category": "japanese",
