@@ -815,14 +815,14 @@
             "themes": ["Amitié","École"],
             "author": ["Yonezawa Honobu (Scénario)","Taskohna (Dessin)"],
             "editor": "VEGA-Dupuis",
-            "volumesVO": 16,
-            "volumesVF": 5,
+            "volumesVO": 17,
+            "volumesVF": 6,
             "status": "En cours",
             "synopsis": "<b>Hotaro</b>, jeune lycéen désinvolte, intègre le club de littérature de son école pour faire plaisir à sa sœur. Il va y rencontrer <b>Eru</b>, une élève dynamique dont la curiosité va l'amener à s'impliquer bien plus que prévu dans la vie de son établissement en résolvant de nombreux mystères...",
             "review": "",
             "mediums": ["Anime"],
-            "tomes": [1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0],
-            "nextRelease": ""
+            "tomes": [1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0],
+            "nextRelease": "2026-08-21"
         },
         {
             "category": "auto",
@@ -1995,14 +1995,14 @@
             "themes": ["Autre monde","Combats","Gender Bender","Royauté","Réincarnation / Transmigration","Yakuza"],
             "author": ["Miyashita Hiroki"],
             "editor": "Kazé",
-            "volumesVO": 18,
-            "volumesVF": 17,
+            "volumesVO": 20,
+            "volumesVF": 18,
             "status": "En cours",
             "synopsis": "Yakuza cinquantenaire régnant à l'ancienne sur son quartier, <b>Ryûmatsu</b> est victime d'un complot et se noie... mais se réveille dans le corps de <b>Ryû</b>, la délicate princesse du royaume de <i>Lundberg</i>. Un monde magique ? Qu'à cela ne tienne ! Il est redevenu jeune et vigoureux... vigoureuse ! Et son nouveau territoire... royaume, a besoin de ses poings pour être défendu !",
             "review": "",
             "mediums": [],
-            "tomes": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0],
-            "nextRelease": ""
+            "tomes": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0],
+            "nextRelease": "2026-09-09"
         },
         {
             "category": "auto",
@@ -2190,13 +2190,13 @@
             "author": ["Arai Harumaki"],
             "editor": "Mana Books",
             "volumesVO": 3,
-            "volumesVF": 1,
+            "volumesVF": 2,
             "status": "Terminé en VO",
             "synopsis": "<b>Itto Yamamoto</b> a récemment intégré une entreprise de développement de jeux vidéo. Il adore son travail, mais regrette de ne pas pouvoir exprimer davantage sa créativité au milieu d'une équipe de plus de cent personnes. Un jour, il participe à un salon de jeux indés et fait la rencontre de <b>Haruka</b>, une jeune développeuse. <b>Itto</b> se retrouve alors aspiré malgré lui dans le monde chaotique des jeux indés...",
             "review": "",
             "mediums": [],
-            "tomes": [1,0,0],
-            "nextRelease": ""
+            "tomes": [1,1,0],
+            "nextRelease": "2026-08-20"
         },
         {
             "category": "auto",
