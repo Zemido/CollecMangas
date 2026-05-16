@@ -255,14 +255,14 @@
             "themes": ["Alchimie","Amitié","Apprentissage","Autre monde","Dragons","Magie","Secrets","Sorcellerie"],
             "author": ["Shirahama Kamome"],
             "editor": "Pika",
-            "volumesVO": 15,
-            "volumesVF": 14,
+            "volumesVO": 16,
+            "volumesVF": 15,
             "status": "En cours",
             "synopsis": "<b>Coco</b> a toujours été passionnée par la magie. Hélas, les seules personnes habilitées à la pratiquer sont les sorciers. C'est un don qu'ils obtiennent à la naissance et qu'ils protègent jalousement.<br/><br/>Un jour, un sorcier du nom de <b>Kieffrey</b> arrive dans le village de <b>Coco</b> et c'est en le voyant à l'œuvre qu'elle comprend la véritable nature de la magie : elle se dessine ! À partir de cet instant, <b>Coco</b> va découvrir un monde merveilleux dont elle ne soupçonnait pas l'existence...",
             "review": "",
-            "mediums": [""],
-            "tomes": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,0],
-            "nextRelease": "2026-05-06"
+            "mediums": ["Anime"],
+            "tomes": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0],
+            "nextRelease": ""
         },
         {
             "category": "auto",
@@ -378,13 +378,13 @@
             "author": ["Kotoyama"],
             "editor": "Kurokawa",
             "volumesVO": 20,
-            "volumesVF": 16,
+            "volumesVF": 17,
             "status": "Terminé",
             "synopsis": "<b><i>En une rencontre, la vie peut reprendre du mordant !</i></b><br/><br/>Impossible de résister à l'appel de la nuit !!<br/>La nuit où <b>Kô Yamori</b>, collégien et éternel insomniaque, décide de sortir se promener seul, il fait la rencontre de <b>Nazuna Nanakusa</b>, une jolie vampire.<br/><br/><i>\"Veille jusqu'à ce que tu sois satisfait de ta journée, Garçon !\"</i><br/>Sa veillée seule avec elle va bouleverser le destin de <b>Kô</b>...",
             "review": "",
             "mediums": ["Anime"],
-            "tomes": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0],
-            "nextRelease": "2026-05-13"
+            "tomes": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0],
+            "nextRelease": "2026-08-20"
         },
         {
             "category": "auto",
@@ -1636,14 +1636,14 @@
             "themes": ["Super-héros"],
             "author": ["Miki Bukimi"],
             "editor": "Kana",
-            "volumesVO": 32,
-            "volumesVF": 27,
+            "volumesVO": 33,
+            "volumesVF": 28,
             "status": "En cours",
             "synopsis": "Au milieu du 21e siècle, toute forme de guerre a disparu de la surface de la Terre.<br/><br/>La raison ? L'apparition de super-héros dans chacun des pays du globe, se chargeant de maintenir la paix, la justice et la sécurité des citoyens.<br/><br/>Au Japon, c'est la timide <b>Teru Momijiyama</b> qui a été choisie pour devenir l'héroïne de son pays, <b>Shy</b>.<br/><br/>Alors qu'elle doute encore de sa capacité à être à la hauteur de sa tâche, de nombreux défis se dressent devant elle, apportant la preuve que sa détermination à sauver tout ceux qui sont à sa portée fait d'elle une héroïne exceptionnelle.",
             "review": "",
             "mediums": ["Anime"],
-            "tomes": [1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0],
-            "nextRelease": "2026-02-06"
+            "tomes": [1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0],
+            "nextRelease": "2026-08-21"
         },
         {
             "category": "auto",
