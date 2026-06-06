@@ -1130,14 +1130,14 @@
             "themes": ["Amitié","Apprentissage","Patinage artistique","Sport"],
             "author": ["TSURUMAIKADA"],
             "editor": "nobi nobi!",
-            "volumesVO": 13,
-            "volumesVF": 12,
+            "volumesVO": 14,
+            "volumesVF": 13,
             "status": "En cours",
             "synopsis": "Le Japon est reconnu comme l'un des meilleurs pays au monde dans le domaine du patinage artistique. Cependant, l'accès au prestigieux championnat national, qui se déroule chaque année, est réservé à une poignée de privilégiés. <b>Tsukasa</b>, un ancien athlète, a vu son rêve se briser après avoir consacré toute sa vie à ce sport. D'un autre côté, <b>Inori</b>, âgée seulement de 11 ans, nourrit le rêve de devenir une grande patineuse, bien que personne ne croie en elle. Le destin réunit ces deux êtres sur la glace, et ensemble, ils se préparent à conquérir le monde avec une motivation sans égale !<br/><br/><b><i>Si je vous disais que je voulais devenir la numéro 1 mondiale, vous accepteriez de m'y aider ?</i></b>",
             "review": "",
             "mediums": ["Anime"],
-            "tomes": [1,1,1,1,1,1,1,1,1,1,1,1,0],
-            "nextRelease": "2026-02-04"
+            "tomes": [1,1,1,1,1,1,1,1,1,1,1,1,1,0],
+            "nextRelease": "2026-08-19"
         },
         {
             "category": "auto",
@@ -2044,13 +2044,13 @@
             "author": ["Uketsu (Scénario)","Ayano Kyo (Dessin)"],
             "editor": "Kana",
             "volumesVO": 6,
-            "volumesVF": 3,
+            "volumesVF": 4,
             "status": "En cours",
             "synopsis": "Un pigiste spécialisé dans le paranormal et l'horreur reçoit un jour la visite d'un homme qui envisage d'acheter une maison. Cependant, les plans de cette dernière sont plus qu'étranges, laissant supposer qu'il y a potentiellement eu des actes de maltraitance d'enfant à l'intérieur...<br/><br/>Quel est donc le secret caché derrière ces curieux agencements de pièces ?<br/><br/>Accompagné d'un architecte de renom, il va mener son enquête au sujet de cette drôle de bâtisse...",
             "review": "",
             "mediums": [],
-            "tomes": [1,1,1,0,0,0],
-            "nextRelease": "2026-06-05"
+            "tomes": [1,1,1,1,0,0],
+            "nextRelease": "2026-09-18"
         },
         {
             "category": "auto",
@@ -2068,13 +2068,13 @@
             "author": ["Uketsu (Scénario)","Aiba Kiko (Dessin)"],
             "editor": "Kana",
             "volumesVO": 4,
-            "volumesVF": 1,
+            "volumesVF": 2,
             "status": "En cours",
             "synopsis": "<b>Sasaki</b> est membre d'un cercle d'occultisme. Un jour, son ami <b>Kurihara</b> lui parle de l'existence d'un blog sur lequel figure l'étrange message \"Le crime que tu as commis\", ainsi que le dessin d'une jeune femme dans le vent réalisé par une certaine <b>Yuki</b>, épouse de l'auteur du blog...<br/><br/>Saurez-vous résoudre les mystères que cachent neuf étranges dessins ??",
             "review": "",
             "mediums": [],
-            "tomes": [1,0,0,0],
-            "nextRelease": "2026-06-05"
+            "tomes": [1,1,0,0],
+            "nextRelease": "2026-09-18"
         },
         {
             "category": "auto",

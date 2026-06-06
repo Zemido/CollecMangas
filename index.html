@@ -372,6 +372,7 @@
             document.getElementById('editorInput').value = '';
             document.getElementById('statusSelect').querySelectorAll('option').forEach(o => o.selected = false);
             document.getElementById('orRadio').checked = true;
+            document.getElementById('searchInput').value = '';
             document.getElementById('searchInput').placeholder = 'Chercher un manga...';
             currentMangas = [...mangas];
             currentMangas.sort((a, b) => a.id.localeCompare(b.id));
