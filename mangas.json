@@ -1543,12 +1543,12 @@
             "author": ["Fikuda Shinichi"],
             "editor": "Kana",
             "volumesVO": 15,
-            "volumesVF": 14,
-            "status": "Terminé en VO",
+            "volumesVF": 15,
+            "status": "Terminé",
             "synopsis": "<b>Wakana Gojo</b> est un lycéen solitaire. Son rêve est de devenir artisan et de fabriquer les poupées traditionnelles pour le <i>Hina Matsuri</i>. Mais comme cette passion n'est pas très virile, il la cache et ne se fait pas remarquer. Jusqu'au jour où <b>Marine Kitagawa</b>, la fille la plus populaire du lycée, le voit se servir d'une machine à coudre ! Contre toute attente elle lui demande de devenir son couturier pour réaliser... des tenues de <i>cosplay</i> !",
             "review": "",
             "mediums": ["Anime"],
-            "tomes": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,0],
+            "tomes": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
             "nextRelease": ""
         },
         {
@@ -2221,6 +2221,31 @@
             "review": "",
             "mediums": ["Anime"],
             "tomes": [1,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0],
+            "nextRelease": ""
+        },
+        {
+            "category": "anthology",
+            "link": "https://www.nautiljon.com/mangas/frieren+anthologie.html",
+            "thumbnail": "bg-frieren_anthologie_27207",
+            "visible": true,
+            "title": {
+                "main": "Frieren Anthologie ～ Sort qui permet de voyager différemment ～",
+                "english": "Frieren Anthology",
+                "romaji": "Sōsō no Frieren Anthology ～ Kotonaru Tabi wo Tanoshimu Mahō ～",
+                "kanji": "葬送のフリーレン アンソロジー～異なる旅を楽しむ魔法～"
+            },
+            "id": "frieren anthologie",
+            "genres": ["Comédie","Fantasy","Histoires courtes","Slice of Life"],
+            "themes": ["Elfe","Magie"],
+            "author": ["Igarashi Soichi","Jona","Kassan","Miura Ren","Yamaguchi Kazumi"],
+            "editor": "Ki-oon",
+            "volumesVO": 1,
+            "volumesVF": 1,
+            "status": "Terminé",
+            "synopsis": "Avez-vous déjà imaginé <b>Frieren</b> en train de préparer à manger pour ses compagnons grâce à ses sorts, l'amitié naissante entre <b>Himmel</b> et <b>Heiter</b> quand ils étaient à l'orphelinat, ou encore les tentatives de l'elfe pour mieux comprendre les humains ?<br/><br/>Cinq histoires inédites à la fois drôles et touchantes, créées par des mangaka de talent, vous attendent dans ce recueil pour vous faire vivre un voyage différent au cœur de l'univers foisonnant de <b>Frieren</b> et découvrir de nouvelles facettes de vos personnages préférés... Prêts pour l'aventure ?",
+            "review": "",
+            "mediums": ["Anime"],
+            "tomes": [1],
             "nextRelease": ""
         }
     ],
