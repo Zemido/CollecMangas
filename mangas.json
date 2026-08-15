@@ -472,14 +472,14 @@
             "themes": ["Fantômes","Malédiction","Vengeance"],
             "author": ["Kondo Kenichi"],
             "editor": "Mana Books",
-            "volumesVO": 18,
-            "volumesVF": 12,
+            "volumesVO": 20,
+            "volumesVF": 15,
             "status": "En cours",
             "synopsis": "<b>Keitarou</b>, un jeune lycéen, a une véritable aversion pour les esprits, malheureusement pour lui, il possède une capacité qui les attire, dans son malheur il peut compter sur son amie d'enfance <b>Eiko</b>, il est par ailleurs embauché comme tuteur pour la cousine de cette dernière <b>Yayoi</b>, elle aussi peut voir les esprits et cherche désespérément celui qui a emporté sa mère.",
             "review": "",
             "mediums": ["Anime"],
-            "tomes": [1,1,1,1,1,1,1,1,1,1,2,2,0,0,0,0,0,0],
-            "nextRelease": "2026-02-19"
+            "tomes": [1,1,1,1,1,1,1,1,1,1,2,2,2,2,1,0,0,0,0,0],
+            "nextRelease": "2026-08-20"
         },
         {
             "category": "auto",
