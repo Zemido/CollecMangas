@@ -217,7 +217,7 @@
 
         function populateDatalist() {
             const datalist = document.getElementById('mangaTitles');
-            const sortedTitles = mangas.map(m => m.id).sort();
+            const sortedTitles = mangas.map(m => m.title.main).sort();
             sortedTitles.forEach(title => {
                 const option = document.createElement('option');
                 option.value = title;
@@ -335,7 +335,7 @@
             setTimeout(()=> {
                 grid.innerHTML = '';
                 const filteredMangas = currentMangas.filter(manga =>
-                    manga.title.main.toLowerCase().includes(titleFilter.toLowerCase())
+                    manga.title.main.toLowerCase().includes(titleFilter.toLowerCase()) || manga.id.toLowerCase().includes(titleFilter.toLowerCase())
                 );
                 filteredMangas.forEach(manga => {
                     const col = document.createElement('div');
