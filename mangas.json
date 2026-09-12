@@ -1995,14 +1995,14 @@
             "themes": ["Autre monde","Combats","Gender Bender","Royauté","Réincarnation / Transmigration","Yakuza"],
             "author": ["Miyashita Hiroki"],
             "editor": "Kazé",
-            "volumesVO": 20,
-            "volumesVF": 18,
+            "volumesVO": 21,
+            "volumesVF": 19,
             "status": "En cours",
             "synopsis": "Yakuza cinquantenaire régnant à l'ancienne sur son quartier, <b>Ryûmatsu</b> est victime d'un complot et se noie... mais se réveille dans le corps de <b>Ryû</b>, la délicate princesse du royaume de <i>Lundberg</i>. Un monde magique ? Qu'à cela ne tienne ! Il est redevenu jeune et vigoureux... vigoureuse ! Et son nouveau territoire... royaume, a besoin de ses poings pour être défendu !",
             "review": "",
             "mediums": [],
-            "tomes": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0],
-            "nextRelease": "2026-09-09"
+            "tomes": [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0],
+            "nextRelease": ""
         },
         {
             "category": "auto",
