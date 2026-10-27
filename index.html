@@ -335,7 +335,7 @@
             setTimeout(()=> {
                 grid.innerHTML = '';
                 const filteredMangas = currentMangas.filter(manga =>
-                    manga.title.main.toLowerCase().includes(titleFilter.toLowerCase()) || manga.id.toLowerCase().includes(titleFilter.toLowerCase())
+                    manga.title.main.toLowerCase().includes(titleFilter.toLowerCase()) || manga.id.toLowerCase().replace(/\s/g, '').includes(titleFilter.toLowerCase())
                 );
                 filteredMangas.forEach(manga => {
                     const col = document.createElement('div');
@@ -355,7 +355,7 @@
         }
 
         document.getElementById('searchInput').addEventListener('input', () => {
-            const filter = document.getElementById('searchInput').value;
+            const filter = document.getElementById('searchInput').value.replace(/\s/g, '');
             populateGrid(filter);
         });
 
